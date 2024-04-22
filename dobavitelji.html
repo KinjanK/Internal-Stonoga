@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dobavitelji | Stonoga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meta descriptions may be included in search results to concisely summarize page content."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper d-flex flex-column">
+      <!-- Start Header -->
+      <header class="header sticky-top bg-white w-100">
+        <div class="container-xl">
+          <nav class="navbar py-0 w-100">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div
+                class="d-flex align-items-xl-end align-items-center flex-grow-1"
+              >
+                <button
+                  class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img src="./images/menu-primary.svg" alt="Menu" />
+                </button>
+                <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+                <ul
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-2"
+                >
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./produkti.html"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link active link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./dobavitelji.html"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="profile dropdown">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle btn-profile btn-text-primary d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./images/profile.svg" alt="profile" />
+                    <div class="d-md-block d-none details">
+                      <p>Pozdravljen/a</p>
+                      <span class="d-block raleway-bold">Ime</span>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Profil
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Odjava
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                >
+                  <img src="./images/cart.svg" alt="Cart" />
+                  <span class="badge badge-lime rounded-circle">3</span>
+                </button>
+                <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+              </div>
+            </div>
+
+            <!-- Start OffCanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex justify-content-center align-content-center"
+              >
+                <a href="/" class="logo mx-auto">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="main-navigation navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./produkti.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./dobavitelji.html"
+                      class="nav-link active d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End OffCanvas -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1">
+        <!-- Start Hero -->
+        <div class="hero-banner position-relative product-banner">
+          <div
+            class="container-xl position-relative hero-bg py-md-0 text-center"
+          >
+            <h3 class="raleway-bold text-white pb-lg-5 pb-4">
+              Najdi dobavitelja
+            </h3>
+            <div class="row justify-lg-content-center">
+              <div class="col-lg col-sm-6 px-lg-1">
+                <div class="form-group light">
+                  <label>Dobavitelj</label>
+                  <input
+                    type="text"
+                    placeholder="Ime dobavitelja"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-lg col-sm-6 px-lg-1">
+                <div class="form-group light">
+                  <label>Ponudba</label>
+                  <input
+                    type="text"
+                    placeholder="Meso, jajca ..."
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-lg col-sm-6 px-lg-1">
+                <div class="form-group light">
+                  <label>Način pridelave</label>
+                  <input
+                    type="text"
+                    placeholder="Prosta reja, eko ..."
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 px-lg-1">
+                <div class="form-group light custom-select w-auto">
+                  <label>Status sodelovanja</label>
+                  <select name="state" class="form-control">
+                    <option value="AL">Alabama</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+                <!-- <div class="form-group custom-select"></div> -->
+              </div>
+              <div class="col-lg-1 col-auto px-lg-1 d-flex align-items-end">
+                <button
+                  class="btn btn-primary btn-lg w-100 mb-16p mt-lg-0 mt-2"
+                >
+                  Išči
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start Sorting Header -->
+        <div class="container-xl">
+          <div class="sorting-block mb-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Domov</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dobavitelji
+                  </li>
+                </ol>
+              </nav>
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn dropdown-toggle btn-light-outlined-primary d-flex align-items-center btn-sort"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Razvrsti po:</span>abecedi
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a href="#" class="dropdown-item" type="button"> Profil </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" type="button"> Odjava </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sorting Header -->
+
+        <!-- Start Product List -->
+        <div class="container-xl">
+          <!-- Vegitables -->
+          <ul class="supplier-table">
+            <li class="supplier-row">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide6.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img
+                      src="./images/chicken-leg-piece.svg"
+                      alt="chicken-leg"
+                    />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/apple.svg" alt="apple" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="supplier-row">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide1.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img src="./images/dairy.svg" alt="dairy" />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/freez.svg" alt="freez" />
+                  </i>
+                  <i>
+                    <img src="./images/organic.svg" alt="organic" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="supplier-row">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide3.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img src="./images/bag.svg" alt="bag" />
+                  </i>
+                  <i>
+                    <img
+                      src="./images/chicken-leg-piece.svg"
+                      alt="chicken-leg"
+                    />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/apple.svg" alt="apple" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="supplier-row">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide2.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img src="./images/bag.svg" alt="bag" />
+                  </i>
+                  <i>
+                    <img
+                      src="./images/chicken-leg-piece.svg"
+                      alt="chicken-leg"
+                    />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/apple.svg" alt="apple" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="supplier-row">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide4.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img src="./images/bag.svg" alt="bag" />
+                  </i>
+                  <i>
+                    <img
+                      src="./images/chicken-leg-piece.svg"
+                      alt="chicken-leg"
+                    />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/apple.svg" alt="apple" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="supplier-row pb-0">
+              <div class="supplier-img mb-md-0 mb-3">
+                <img class="w-md-auto" src="./images/slide5.jpg" alt="" />
+              </div>
+              <div class="supplier-detail">
+                <a href="./dobavitelji-podrobnosti.html" class="link-primary">
+                  <h4 class="title raleway-bold pb-3">Ime dobavitelja</h4>
+                </a>
+                <p class="location">Naslov, Mesto</p>
+                <h6 class="d-flex text-primary raleway-semibold pb-2">
+                  Ponudba
+                  <span class="raleway-regular ms-2">(15 izdelkov)</span>
+                </h6>
+                <div
+                  class="product-icon-list d-flex align-items-center gap-2 mb-3"
+                >
+                  <i>
+                    <img src="./images/bag.svg" alt="bag" />
+                  </i>
+                  <i>
+                    <img
+                      src="./images/chicken-leg-piece.svg"
+                      alt="chicken-leg"
+                    />
+                  </i>
+                  <i>
+                    <img src="./images/caret.svg" alt="caret" />
+                  </i>
+                  <i>
+                    <img src="./images/apple.svg" alt="apple" />
+                  </i>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3 mb-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Način pridelave:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        EKO
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-flex align-items-center flex-wrap gap-3">
+                  <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                    Certifikati:
+                  </h6>
+                  <ul class="badge-list">
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                    <li>
+                      <span class="chip chip-outlined-primary-light">
+                        Lorem ipsum
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Vegitables -->
+
+          <!-- Pagination -->
+          <ul
+            class="pagination d-flex align-items-center justify-content-center"
+          >
+            <li>
+              <button class="btn btn-icon btn-transparent">
+                <img src="./images/chevron-left.svg" alt="Back" />
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-light-outlined-primary btn-icon active">
+                1
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-light-outlined-primary btn-icon">2</button>
+            </li>
+            <li>
+              <button class="btn btn-light-outlined-primary btn-icon">3</button>
+            </li>
+            <li>
+              <button class="btn btn-light-outlined-primary btn-icon">4</button>
+            </li>
+            <li>
+              <button class="btn btn-icon btn-transparent">
+                <img src="./images/chevron-right.svg" alt="Next" />
+              </button>
+            </li>
+          </ul>
+          <!-- Pagination -->
+        </div>
+        <!-- End Product List -->
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="container-xl">
+          <div
+            class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
+          >
+            <a href="/" class="order-1 logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+            <ul
+              class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap"
+            >
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >ponudba</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kmetije</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Dogodki</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >projekti</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >partnerji</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >O Stonogi</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <a href="/" class="order-lg-3 order-2 social-logo">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="secondary-footer text-center">
+            <p class="copyright p-0">
+              Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="vse pravice pridržane"
+                >vse pravice pridržane
+              </a>
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Pogoji poslovanja"
+                >Pogoji poslovanja</a
+              >
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Zasebnost"
+                >Zasebnost</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> -->
+  </body>
+</html>

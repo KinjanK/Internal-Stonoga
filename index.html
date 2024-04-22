@@ -1,53 +1,693 @@
-<!doctype html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Page Title</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Meta descriptions may be included in search results to concisely summarize page content.">
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Produkti | Stonoga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meta descriptions may be included in search results to concisely summarize page content."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
 
-	<body>
-		<div class="wrapper d-flex flex-column">
-			<!-- Start Header -->
-			<header class="header position-sticky">
-				<div class="container-xxl">
-					<a href="index.html" title="Logo" aria-label="Logo" class="logo">
-						<img src="images/logo.png" alt="">
-					</a>	
+  <body>
+    <div class="wrapper d-flex flex-column">
+      <!-- Start Header -->
+      <header class="header sticky-top bg-white w-100">
+        <div class="container-xl">
+          <nav class="navbar py-0 w-100">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div
+                class="d-flex align-items-xl-end align-items-center flex-grow-1"
+              >
+                <button
+                  class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img src="./images/menu-primary.svg" alt="Menu" />
+                </button>
+                <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+                <ul
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-2"
+                >
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./produkti.html"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./dobavitelji.html"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="profile dropdown">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle btn-profile btn-text-primary d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./images/profile.svg" alt="profile" />
+                    <div class="d-md-block d-none details">
+                      <p>Pozdravljen/a</p>
+                      <span class="d-block raleway-bold">Ime</span>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Profil
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Odjava
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
-					<!-- Main Navigation -->
-					<nav class="main-navigation">
-						<ul>
-							<li><a href="#" title="Lorem ipsum.">Lorem ipsum.</a></li>
-						</ul>
-					</nav>
-					<!-- End Main Navigation -->		
-				</div>
-			</header>
-			<!-- End Header -->
+                <button
+                  type="button"
+                  class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                >
+                  <img src="./images/cart.svg" alt="Cart" />
+                  <span class="badge badge-lime rounded-circle">3</span>
+                </button>
+                <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+              </div>
+            </div>
 
-			<!-- Main Content -->
-			<main class="main-content flex-grow-1">
-				<div class="container-xxl">
-					Page Content Goes Here	
-				</div>
-			</main>
-			<!-- End Main Content -->
+            <!-- Start OffCanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex justify-content-center align-content-center"
+              >
+                <a href="/" class="logo mx-auto">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="main-navigation navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./produkti.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./dobavitelji.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End OffCanvas -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
 
-			<!-- Start Footer -->
-			<footer class="footer">
-				<div class="container-xxl">
-					<p class="copyright">&copy; 2021 Companny Name</p>					
-				</div>
-			</footer>
-			<!-- End Footer -->	
-		</div>
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1 light-background">
+        <!-- Start Hero -->
+        <div class="hero-banner position-relative">
+          <div
+            class="container-xl position-relative mb-md-3 mb-5 pt-md-0 pt-3 pb-md-2 pb-5 hero-bg"
+          >
+            <div class="row mb-md-0 mb-4">
+              <div
+                class="col-lg-7 col-md-5 col-sm d-flex flex-column align-items-start order-sm-0 order-1"
+              >
+                <div class="pt-sm-4 pt-0 mt-lg-5 mt-md-3">
+                  <h1 class="raleway-bold text-white pb-3">
+                    Veliki Stonogin dan
+                  </h1>
+                  <h4 class="raleway-bold text-white pb-4">
+                    ČETRTEK, 11. aprila, pri steklenjaku na Brdu
+                  </h4>
+                  <button class="btn btn-primary btn-lg">Poglej ponudbo</button>
+                </div>
+              </div>
+              <div class="col-lg col-md col-sm-5 order-sm-1 order-0">
+                <div
+                  class="hero-shape-wrapper text-md-end text-center mb-md-0 mb-4 my-4"
+                >
+                  <img
+                    class="img-fluid ms-auto"
+                    src="./images/hero-shape.svg"
+                    alt="hero-shape"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl mb-5 pb-lg-4">
+            <div class="text-center">
+              <h4 class="raleway-bold text-primary pb-2">
+                Ponudba domačih dobrot
+              </h4>
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col">
+                  <div class="form-group common-search">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary btn-lg mb-16p">Išči</button>
+                </div>
+              </div>
 
-		<!-- JavaScripts -->
-		<script src="js/main.js"></script>
-	</body>
-	</html>
+              <div class="row mt-2 mb-16p justify-content-center">
+                <div class="col-auto px-1">
+                  <a
+                    href="#"
+                    class="category-card d-block"
+                    title="Meso in 
+                    mesni izdelki"
+                  >
+                    <img src="./images/chicken-leg-piece.svg" alt="Chicken" />
+                    <p class="text-center text-primary raleway-medium">
+                      Meso in mesni izdelki
+                    </p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a href="#" class="category-card d-block" title="Zelenjava">
+                    <img src="./images/caret.svg" alt="Caret" />
+                    <p class="text-center text-primary raleway-medium">
+                      Zelenjava
+                    </p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a href="#" class="category-card d-block" title="Sadje">
+                    <img src="./images/apple.svg" alt="Apple" />
+                    <p class="text-center text-primary raleway-medium">Sadje</p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a
+                    href="#"
+                    class="category-card d-block"
+                    title="Jajca in mlečni produkti"
+                  >
+                    <img src="./images/dairy.svg" alt="Dairy" />
+                    <p class="text-center text-primary raleway-medium">
+                      Jajca in mlečni produkti
+                    </p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a
+                    href="#"
+                    class="category-card d-block"
+                    title="Čebelarski izdelki"
+                  >
+                    <img src="./images/freez.svg" alt="Freez" />
+                    <p class="text-center text-primary raleway-medium">
+                      Čebelarski izdelki
+                    </p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a
+                    href="#"
+                    class="category-card d-block"
+                    title="Olja in začimbe"
+                  >
+                    <img src="./images/organic.svg" alt="Organic" />
+                    <p class="text-center text-primary raleway-medium">
+                      Olja in začimbe
+                    </p>
+                  </a>
+                </div>
+                <div class="col-auto px-1">
+                  <a
+                    href="#"
+                    class="category-card d-block"
+                    title="Žita in moke"
+                  >
+                    <img src="./images/bag.svg" alt="Bag" />
+                    <p class="text-center text-primary raleway-medium">
+                      Žita in moke
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr class="primary-saperator" />
+            <div class="text-center pt-3">
+              <h4 class="raleway-bold text-primary pb-2">Najdi dobavitelja</h4>
+              <div class="row justify-lg-content-center">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="form-group">
+                    <label>Ime dobavitelja</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="form-group">
+                    <label>Ime dobavitelja</label>
+                    <input
+                      type="text"
+                      placeholder="Meso, jajca ..."
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="form-group">
+                    <label>Ime dobavitelja</label>
+                    <input
+                      type="text"
+                      placeholder="Prosta reja, eko ..."
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="form-group">
+                    <label>Ime dobavitelja</label>
+                    <input
+                      type="text"
+                      placeholder="Sodelujoči"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-auto col-12 d-flex align-items-end">
+                  <button
+                    class="btn btn-primary btn-lg mb-16p w-100 mt-lg-0 mt-2"
+                  >
+                    Išči
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start Market Block  -->
+        <div class="py-5 bg-white">
+          <div class="container-xl py-lg-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-11">
+                <div class="row">
+                  <div class="col-lg-5 col-md order-md-1 order-2">
+                    <div class="d-flex flex-column align-items-start">
+                      <h3 class="raleway-bold text-primary mb-lg-5 mb-4 pb-0">
+                        O stonogi
+                      </h3>
+                      <h6 class="raleway-bold text-primary mb-lg-4 mb-3 pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean nunc tellus, scelerisque eget.
+                      </h6>
+                      <h6 class="text-grey mb-lg-4 mb-3 pb-lg-3">
+                        Integer ultrices congue ultricies. Donec condimentum
+                        ullamcorper dolor, non dapibus metus. Aenean ut lobortis
+                        ante, eget efficitur lorem.
+                      </h6>
+                      <button class="btn btn-primary btn-lg">
+                        Spoznajte nas
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg col-md order-md-2 order-1">
+                    <div class="pick-bag-image-wrapper mb-md-0 mb-4">
+                      <img
+                        class="img-fluid ms-auto"
+                        src="./images/pick-bag-fluid.svg"
+                        alt="pick-bag"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Market Block  -->
+
+        <!-- Start Feature Block  -->
+        <div class="feature-block py-5">
+          <div class="container-xl my-lg-5">
+            <h3 class="raleway-bold text-center text-primary">
+              Zakaj kupovati pri Stonogi?
+            </h3>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-md">
+                    <div
+                      class="feature-card d-flex flex-column align-content-center text-center"
+                    >
+                      <img
+                        class="img-fluid mx-auto"
+                        src="./images/fuit-on-tree.svg"
+                        alt="fuit"
+                      />
+                      <h6 class="raleway-bold text-primary mb-6p pb-0">
+                        Sveže in hranljivo
+                      </h6>
+                      <p class="text-primary description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean nunc tellus, scelerisque.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="feature-card d-flex flex-column align-content-center text-center"
+                    >
+                      <img
+                        class="img-fluid mx-auto"
+                        src="./images/man-hat.svg"
+                        alt="man-hat"
+                      />
+                      <h6 class="raleway-bold text-primary mb-6p pb-0">
+                        Podprite lokalne kmetovalce
+                      </h6>
+                      <p class="text-primary description">
+                        Donec condimentum ullamcorper dolor, non dapibus metus.
+                        Aenean ut lobortis ante, eget.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="feature-card d-flex flex-column align-content-center text-center"
+                    >
+                      <img
+                        class="img-fluid mx-auto"
+                        src="./images/plantation.svg"
+                        alt="plantation"
+                      />
+                      <h6 class="raleway-bold text-primary mb-6p pb-0">
+                        Okolju prijazno
+                      </h6>
+                      <p class="text-primary description">
+                        Donec condimentum ullamcorper dolor, non dapibus metus.
+                        Aenean.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Feature Block  -->
+
+        <!-- Start Contact Block -->
+        <div class="contact-block bg-white">
+          <div class="container-xl">
+            <div class="row justify-content-center">
+              <div class="col-lg-11 bg-gradient text-white">
+                <div class="row">
+                  <div class="col me-n2">
+                    <h4 class="text-white mb-1 pb-lg-5 raleway-bold">
+                      Imate vprašanje ali povratne informacije? Kontaktirajte
+                      nas preko spodnjega obrazca.
+                    </h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group contact-control">
+                          <input
+                            type="text"
+                            placeholder="Ime"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group contact-control">
+                          <input
+                            type="text"
+                            placeholder="Priimek"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group contact-control">
+                          <input
+                            type="text"
+                            placeholder="E-Mail"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group contact-control">
+                          <textarea
+                            class="form-control"
+                            value="Sporočilo"
+                            rows="4"
+                          >
+                          Sporočilo
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check mb-4">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Soglašam lorem ipsum sit dolor ...
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary btn-lg">Pošlji</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xxl-6 col-lg-5 d-xl-block d-lg-flex d-none align-items-center ps-xl-0 ps-5"
+                  >
+                    <img
+                      class="contact-image"
+                      src="./images/sweet-fluid.svg"
+                      alt="sweet-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Block -->
+
+        <!-- Start Subscribe Block -->
+        <div class="subscribe-block py-sm-4 py-3">
+          <div class="container-xl my-sm-3 my-1">
+            <div class="row justify-content-center">
+              <div class="col-auto d-flex align-items-center">
+                <p class="text-white align-self-center">Postani dobavitelj.</p>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary btn-lg">Registracija</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Subscribe Block -->
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="container-xl">
+          <div
+            class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
+          >
+            <a href="/" class="order-1 logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+            <ul
+              class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap"
+            >
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >ponudba</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kmetije</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Dogodki</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >projekti</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >partnerji</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >O Stonogi</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <a href="/" class="order-lg-3 order-2 social-logo">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="secondary-footer text-center">
+            <p class="copyright p-0">
+              Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="vse pravice pridržane"
+                >vse pravice pridržane
+              </a>
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Pogoji poslovanja"
+                >Pogoji poslovanja</a
+              >
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Zasebnost"
+                >Zasebnost</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
