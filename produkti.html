@@ -44,7 +44,7 @@
                   <img src="./images/logo.svg" alt="Logo" />
                 </a>
                 <ul
-                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-2"
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3"
                 >
                   <li class="nav-item mx-xl-1">
                     <a
@@ -88,7 +88,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="d-flex align-items-center justify-content-between">
+              <div
+                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+              >
                 <div class="profile dropdown">
                   <button
                     type="button"
@@ -116,14 +118,18 @@
                   </ul>
                 </div>
 
-                <button
-                  type="button"
-                  class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                <div
+                  class="d-flex align-items-center justify-content-end mb-xl-n20p"
                 >
-                  <img src="./images/cart.svg" alt="Cart" />
-                  <span class="badge badge-lime rounded-circle">3</span>
-                </button>
-                <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                  <button
+                    type="button"
+                    class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                  >
+                    <img src="./images/cart.svg" alt="Cart" />
+                    <span class="badge badge-lime rounded-circle">3</span>
+                  </button>
+                  <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                </div>
               </div>
             </div>
 
@@ -205,6 +211,18 @@
               <button class="btn btn-icon btn-transparent btn-action">
                 <img src="./images/search.svg" alt="Search" />
               </button>
+            </div>
+
+            <div
+              class="form-group light custom-select d-xxl-none mx-auto mb-4 product-search"
+            >
+              <label>Način pridelave</label>
+              <select name="state" class="form-control">
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+                <option value="Option3">Option3</option>
+                <option value="Option4">Option4</option>
+              </select>
             </div>
 
             <div class="row justify-content-center">
@@ -292,12 +310,14 @@
                   </p>
                 </a>
               </div>
-              <div class="col-auto d-flex align-items-center">
+              <div class="col-auto d-xxl-flex d-none align-items-center">
                 <div class="form-group light custom-select ms-4">
                   <label>Način pridelave</label>
                   <select name="state" class="form-control">
-                    <option value="AL">Alabama</option>
-                    <option value="WY">Wyoming</option>
+                    <option value="Option1">Option1</option>
+                    <option value="Option2">Option2</option>
+                    <option value="Option3">Option3</option>
+                    <option value="Option4">Option4</option>
                   </select>
                 </div>
               </div>
@@ -381,13 +401,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -423,13 +443,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">1</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="1"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -468,13 +488,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -510,13 +530,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -549,13 +569,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -588,13 +608,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -627,13 +647,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -678,13 +698,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -717,13 +737,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">1</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -756,13 +776,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -795,13 +815,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -834,13 +854,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -873,13 +893,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -912,13 +932,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -963,13 +983,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -1002,13 +1022,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -1041,13 +1061,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €

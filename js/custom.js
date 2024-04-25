@@ -16,17 +16,17 @@ $(document).ready(function () {
   });
 
   // Show Hide Header on Scroll
-  var lastScroll = 0;
-  var lastScrollTimeOut;
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll + 50 < lastScroll) $("body").removeClass("page-scrolled");
-    else if (scroll - 50 > lastScroll) $("body").addClass("page-scrolled");
+  // var lastScroll = 0;
+  // var lastScrollTimeOut;
+  // $(window).scroll(function () {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll + 50 < lastScroll) $("body").removeClass("page-scrolled");
+  //   else if (scroll - 50 > lastScroll) $("body").addClass("page-scrolled");
 
-    if ($(window).scrollTop() < 100) $("body").removeClass("page-scrolled");
+  //   if ($(window).scrollTop() < 100) $("body").removeClass("page-scrolled");
 
-    lastScroll = scroll;
-  });
+  //   lastScroll = scroll;
+  // });
 
   // Add remove class when window resize finished
   var $resizeTimer;
@@ -42,52 +42,62 @@ $(document).ready(function () {
 
   // Add new js functions here -----------------------------------------------------------------
 
-  // On scroll Add Class
-  $(window).scroll(function (e) {
-    if ($(window).scrollTop() > 200) {
+  // Define the function that toggles the 'page-scrolled' class based on scroll position
+  function togglePageScrolled() {
+    if ($(window).scrollTop() > 50) {
       $(".wrapper").addClass("page-scrolled");
     } else {
       $(".wrapper").removeClass("page-scrolled");
     }
+  }
+
+  // Call togglePageScrolled when the window loads
+  $(window).on("load", function () {
+    togglePageScrolled(); // Check the scroll position when the page loads
+  });
+
+  // Call togglePageScrolled when the window is scrolled
+  $(window).on("scroll", function () {
+    togglePageScrolled(); // Check the scroll position on each scroll event
   });
 
   // Footer margin set for stick to bottom
   function footerAdj() {
     var footerH = $(".footer").innerHeight();
-    // var headerH = $(".header").innerHeight();
     $(".footer").css({ "margin-top": -footerH });
     $(".main-content").css({ "padding-bottom": footerH });
-    // $(".wrapper").css({ "padding-top": headerH });
   }
   footerAdj();
 
-  // $(".selectpicker").selectpicker();
+  // Input Spinner
+  $("input[type='number']").inputSpinner();
 
+  // Select2
   $("select").select2({
     minimumResultsForSearch: -1,
   });
 
-  $(".counter").each(function () {
-    // Get references to the elements within the counter
-    var $counter = $(this);
-    var $decrementButton = $counter.find("button").eq(0); // The first button is the "minus" button
-    var $incrementButton = $counter.find("button").eq(1); // The second button is the "plus" button
-    var $countDisplay = $counter.find("span"); // The span that displays the count
+  // $(".counter").each(function () {
+  //   // Get references to the elements within the counter
+  //   var $counter = $(this);
+  //   var $decrementButton = $counter.find("button").eq(0); // The first button is the "minus" button
+  //   var $incrementButton = $counter.find("button").eq(1); // The second button is the "plus" button
+  //   var $countDisplay = $counter.find("span"); // The span that displays the count
 
-    // Handle click event for the decrement button
-    $decrementButton.click(function () {
-      var currentCount = parseInt($countDisplay.text(), 10); // Get the current count
-      if (currentCount > 0) {
-        $countDisplay.text(currentCount - 1); // Decrement the count
-      }
-    });
+  //   // Handle click event for the decrement button
+  //   $decrementButton.click(function () {
+  //     var currentCount = parseInt($countDisplay.text(), 10); // Get the current count
+  //     if (currentCount > 0) {
+  //       $countDisplay.text(currentCount - 1); // Decrement the count
+  //     }
+  //   });
 
-    // Handle click event for the increment button
-    $incrementButton.click(function () {
-      var currentCount = parseInt($countDisplay.text(), 10); // Get the current count
-      $countDisplay.text(currentCount + 1); // Increment the count
-    });
-  });
+  //   // Handle click event for the increment button
+  //   $incrementButton.click(function () {
+  //     var currentCount = parseInt($countDisplay.text(), 10); // Get the current count
+  //     $countDisplay.text(currentCount + 1); // Increment the count
+  //   });
+  // });
 
   // Window Resize
   $(window).resize(function () {

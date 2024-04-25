@@ -44,7 +44,7 @@
                   <img src="./images/logo.svg" alt="Logo" />
                 </a>
                 <ul
-                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-2"
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3"
                 >
                   <li class="nav-item mx-xl-1">
                     <a
@@ -88,7 +88,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="d-flex align-items-center justify-content-between">
+              <div
+                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+              >
                 <div class="profile dropdown">
                   <button
                     type="button"
@@ -116,14 +118,18 @@
                   </ul>
                 </div>
 
-                <button
-                  type="button"
-                  class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                <div
+                  class="d-flex align-items-center justify-content-end mb-xl-n20p"
                 >
-                  <img src="./images/cart.svg" alt="Cart" />
-                  <span class="badge badge-lime rounded-circle">3</span>
-                </button>
-                <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                  <button
+                    type="button"
+                    class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                  >
+                    <img src="./images/cart.svg" alt="Cart" />
+                    <span class="badge badge-lime rounded-circle">3</span>
+                  </button>
+                  <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                </div>
               </div>
             </div>
 
@@ -198,32 +204,27 @@
       <main class="main-content flex-grow-1">
         <!-- Hero Slider -->
         <div class="position-relative overflow-hidden">
-          <div class="container-xl">
-            <div class="row">
-              <div class="col-lg-6 d-flex align-items-center order-lg-1 order-2">
+          <div class="container-fluid px-0">
+            <div class="row mx-0 align-items-center">
+              <div
+                class="col-lg-6 d-flex justify-content-end align-items-center order-lg-1 order-2"
+              >
                 <div class="supplier-card banner flex-grow-1">
-                  <h2 class="title raleway-bold text-primary pb-1">
+                  <h2 class="title raleway-bold text-primary pb-1 mb-n1">
                     Ime dobavitelja
                   </h2>
                   <h4 class="location raleway-bold text-primary">
                     Naslov, Mesto
                   </h4>
-                  <div class="text-primary">
+                  <div class="text-primary description">
                     <span class="raleway-regular"
-                      >Ime in priimek nosilca dejavnosti</span
+                      >Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of tchanged. It was popularised in
+                      the 1960s with the release of Letraset sheets containing
+                      Lorem Ipsum passages,</span
                     >
-                    <p>
-                      <span class="raleway-bold">T:</span>
-                      <a class="link-primary" href="tel:+386 (0)12 345 678"
-                        >+386 (0)12 345 678</a
-                      >
-                    </p>
-                    <p>
-                      <span class="raleway-bold">M:</span>
-                      <a class="link-primary" href="mailto:info@dobavitelj.si"
-                        >info@dobavitelj.si</a
-                      >
-                    </p>
                   </div>
                   <hr class="primary-saperator" />
                   <div class="supplier-detail">
@@ -301,7 +302,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 order-lg-2 order-1">
+              <div class="col-lg-6 order-lg-2 order-1 px-0">
                 <div class="fluid-slider">
                   <div class="swiper hero-main">
                     <div class="swiper-wrapper">
@@ -387,13 +388,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -406,7 +407,7 @@
                 </button>
               </div>
             </li>
-            <li class="product-row active">
+            <li class="product-row">
               <div class="left">
                 <i class="product-img">
                   <img
@@ -429,13 +430,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">1</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -474,13 +475,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -516,13 +517,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -555,13 +556,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -594,13 +595,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -633,13 +634,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -684,13 +685,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -723,13 +724,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">1</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -762,13 +763,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -801,13 +802,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -840,13 +841,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -879,13 +880,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -918,13 +919,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -969,13 +970,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -1008,13 +1009,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -1047,13 +1048,13 @@
               </div>
               <div class="right">
                 <div class="counter">
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/minus.svg" alt="Minus" />
-                  </button>
-                  <span class="number">0</span>
-                  <button class="btn btn-icon btn-transparent">
-                    <img src="./images/plus.svg" alt="Plus" />
-                  </button>
+                  <input
+                    class="input-spinner"
+                    value="0"
+                    min="0"
+                    max="1000"
+                    type="number"
+                  />
                 </div>
                 <h6 class="text-primary raleway-bold pb-0 text-nowrap">
                   12,00 €
@@ -1074,214 +1075,217 @@
         </div>
         <!-- End Product List -->
 
-        <div class="product-slider container-xl mb-5 pb-5 position-relative">
+        <div class="product-slider container-xxl mb-md-5 mb-3 pb-5">
           <h2 class="text-center raleway-bold text-primary pb-xl-5 pb-3 mb-3">
             Ostali dobavitelji
           </h2>
-          <div class="swiper-button-prev d-xl-block d-none"></div>
-          <div class="swiper blockSlider pt-xl-2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide1.jpg" alt="" />
-                  </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide2.jpg" alt="" />
-                  </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
+          <div class="position-relative">
+            <div class="swiper-button-prev d-xxl-block d-none"></div>
+            <div class="swiper blockSlider pt-xl-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide1.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide3.jpg" alt="" />
-                  </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide1.jpg" alt="" />
-                  </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide2.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide2.jpg" alt="" />
-                  </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide3.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="supplier-card">
-                  <div class="supplier-img">
-                    <img class="w-100" src="./images/slide3.jpg" alt="" />
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide1.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="supplier-card-detail">
-                    <h6 class="title raleway-bold text-primary pb-0">
-                      Ime dobavitelja
-                    </h6>
-                    <p class="location">Naslov, Mesto</p>
-                    <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
-                      Način pridelave:
-                    </h6>
-                    <ul class="badge-list">
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          EKO
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chip chip-outlined-primary-light">
-                          Lorem ipsum
-                        </span>
-                      </li>
-                    </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide2.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="supplier-card">
+                    <div class="supplier-img">
+                      <img class="w-100" src="./images/slide3.jpg" alt="" />
+                    </div>
+                    <div class="supplier-card-detail">
+                      <h6 class="title raleway-bold text-primary pb-0">
+                        Ime dobavitelja
+                      </h6>
+                      <p class="location">Naslov, Mesto</p>
+                      <h6 class="text-primary raleway-semibold pb-md-0 pb-2">
+                        Način pridelave:
+                      </h6>
+                      <ul class="badge-list">
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            EKO
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chip chip-outlined-primary-light">
+                            Lorem ipsum
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next d-xxl-block d-none"></div>
           </div>
-          <div class="swiper-button-next d-xl-block d-none"></div>
+          <div class="swiper-pagination position-static mt-4"></div>
         </div>
       </main>
       <!-- End Main Content -->
@@ -1391,6 +1395,10 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        grabCursor: true,
         breakpoints: {
           500: {
             slidesPerView: 1,
