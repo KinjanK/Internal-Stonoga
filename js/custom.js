@@ -56,9 +56,37 @@ $(document).ready(function () {
     minimumResultsForSearch: -1,
   });
 
+  // Profile Sidebar toggle
+  $(".btn-profile-drawer-handle").on("click", function () {
+    $("body").toggleClass("show-profile");
+  });
+
+  // Overlayer Click
+  $(".overlayer").on("click", function () {
+    $("body").removeClass("show-profile");
+  });
+
+  // Tooltip
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
+
+  // Nested Menu
+  $(".have-child > .profile-nav-item").on("click", function (e) {
+    e.preventDefault(); // Prevent the default link behavior
+    var $nestedMenu = $(this).next(".nested-menu");
+    $nestedMenu.slideToggle("fast"); // Toggle the nested menu
+
+    // Toggle the 'open' class on the parent <li> element
+    $(this).parent(".have-child").toggleClass("open");
+  });
+
   // Window Resize
   $(window).resize(function () {
-    $("body").removeClass("open");
+    $("body").removeClass("open show-profile");
   });
 
   // Don't add anything below this --------------------------------------------------------------

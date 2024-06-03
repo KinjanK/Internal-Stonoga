@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registracija | Stonoga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meta descriptions may be included in search results to concisely summarize page content."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper d-flex flex-column">
+      <!-- Start Header -->
+      <header class="header sticky-top bg-white w-100">
+        <div class="container-xl">
+          <nav class="navbar py-0 w-100">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div
+                class="d-flex align-items-xl-end align-items-center flex-grow-1"
+              >
+                <button
+                  class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img src="./images/menu-primary.svg" alt="Menu" />
+                </button>
+                <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+                <ul
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3"
+                >
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./produkti.html"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./dobavitelji.html"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="kontakt.html"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+              >
+                <button
+                  class="d-sm-block d-none btn btn-primary btn-lg mb-xl-n20p min-xl-w-182p mr-xl-80p"
+                >
+                  Prijava
+                </button>
+                <button
+                  class="d-sm-none d-block btn btn-primary btn-sm mb-xl-n20p"
+                >
+                  Prijava
+                </button>
+
+                <div
+                  class="d-flex align-items-center justify-content-end mb-xl-n20p"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                  >
+                    <img src="./images/cart.svg" alt="Cart" />
+                    <span class="badge badge-lime rounded-circle">3</span>
+                  </button>
+                  <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start OffCanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex justify-content-center align-content-center"
+              >
+                <a href="/" class="logo mx-auto">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="main-navigation navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./produkti.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./dobavitelji.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End OffCanvas -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1 contact-page">
+        <!-- Start Contact Block -->
+
+        <div class="container-xl">
+          <div class="tabs-wrapper registration">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="registracija-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#registracija"
+                  type="button"
+                  role="tab"
+                  aria-controls="registracija"
+                  aria-selected="true"
+                >
+                  Registracija
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="prijava-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#prijava"
+                  type="button"
+                  role="tab"
+                  aria-controls="prijava"
+                  aria-selected="false"
+                >
+                  Prijava
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="registracija"
+                role="tabpanel"
+                aria-labelledby="registracija-tab"
+              >
+                <div class="max-w-754">
+                  <h3 class="raleway-bold text-primary">
+                    Ustvarite svoj profil pri Stonogi!
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Ime"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Priimek"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="E-Mail"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Telefonska številka"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control postfix-icon">
+                        <input
+                          type="password"
+                          placeholder="Geslo"
+                          class="form-control password-input"
+                        />
+                        <button
+                          class="btn-icon-postfix btn btn-icon btn-rounded btn-transparent toggle-button"
+                        >
+                          <img
+                            src="./images/not-visible.svg"
+                            alt="Hide Password"
+                            class="hide-icon"
+                          />
+                          <img
+                            src="./images/visible.svg"
+                            alt="Show Password"
+                            class="show-icon"
+                            style="display: none"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control postfix-icon">
+                        <input
+                          type="password"
+                          placeholder="Ponovno vnesi geslo"
+                          class="form-control password-input"
+                        />
+                        <button
+                          class="btn-icon-postfix btn btn-icon btn-rounded btn-transparent toggle-button"
+                        >
+                          <img
+                            src="./images/not-visible.svg"
+                            alt="Hide Password"
+                            class="hide-icon"
+                          />
+                          <img
+                            src="./images/visible.svg"
+                            alt="Show Password"
+                            class="show-icon"
+                            style="display: none"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary btn-lg w-100">
+                        Pošlji
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="prijava"
+                role="tabpanel"
+                aria-labelledby="prijava-tab"
+              >
+                <div class="max-w-754">
+                  <h3 class="raleway-bold text-primary">
+                    Lorem ipsum dolor sit Stonogi!
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Ime"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Priimek"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="E-Mail"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Telefonska številka"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary btn-lg w-100">
+                        Pošlji
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Block -->
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="container-xl">
+          <div
+            class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
+          >
+            <a href="/" class="order-1 logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+            <ul
+              class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap"
+            >
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >ponudba</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kmetije</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Dogodki</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >projekti</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >partnerji</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >O Stonogi</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <a href="/" class="order-lg-3 order-2 social-logo">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="secondary-footer text-center">
+            <p class="copyright p-0">
+              Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="vse pravice pridržane"
+                >vse pravice pridržane
+              </a>
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Pogoji poslovanja"
+                >Pogoji poslovanja</a
+              >
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Zasebnost"
+                >Zasebnost</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+    <script module="javascript">
+      $(".toggle-button").click(function () {
+        var passwordInput = $(this).prev(".password-input");
+        var hideIcon = $(this).find(".hide-icon");
+        var showIcon = $(this).find(".show-icon");
+
+        if (passwordInput.attr("type") === "password") {
+          passwordInput.attr("type", "text");
+          hideIcon.hide();
+          showIcon.show();
+        } else {
+          passwordInput.attr("type", "password");
+          hideIcon.show();
+          showIcon.hide();
+        }
+      });
+    </script>
+  </body>
+</html>

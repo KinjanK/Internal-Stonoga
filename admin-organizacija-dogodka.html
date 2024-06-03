@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Organizacija dogodka | Stonoga</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Meta descriptions may be included in search results to concisely summarize page content." />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+  <div class="wrapper d-flex flex-column">
+    <!-- Start Header -->
+    <header class="header sticky-top bg-white w-100">
+      <div class="container-xl">
+        <nav class="navbar py-0 w-100">
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex align-items-xl-end align-items-center flex-grow-1">
+              <button
+                class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <img src="./images/menu-primary.svg" alt="Menu" />
+              </button>
+              <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                <img src="./images/logo.svg" alt="Logo" />
+              </a>
+              <ul
+                class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3">
+                <li class="nav-item mx-xl-1">
+                  <a class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle" href="./produkti.html"
+                    title="Produkti">Produkti</a>
+                </li>
+                <li class="nav-item mx-xl-1">
+                  <a class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                    href="./dobavitelji.html" title="Dobavitelji">Dobavitelji</a>
+                </li>
+                <li class="nav-item mx-xl-1">
+                  <a class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle" href="#"
+                    title="Dogodki">Dogodki</a>
+                </li>
+                <li class="nav-item mx-xl-1">
+                  <a class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle" href="#" title="O nas">O
+                    nas</a>
+                </li>
+                <li class="nav-item mx-xl-1">
+                  <a class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle" href="kontakt.html"
+                    title="Kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between">
+              <div class="d-flex align-items-center justify-content-end mb-xl-n20p">
+                <button type="button"
+                  class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2">
+                  <img src="./images/cart.svg" alt="Cart" />
+                  <span class="badge badge-lime rounded-circle">3</span>
+                </button>
+                <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start OffCanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-flex justify-content-center align-content-center">
+              <a href="/" class="logo mx-auto">
+                <img src="./images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="main-navigation navbar-nav justify-content-end flex-grow-1">
+                <li class="my-1 d-block nav-item">
+                  <a href="./produkti.html" class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                    title="Produkti">Produkti</a>
+                </li>
+                <li class="my-1 d-block nav-item">
+                  <a href="./dobavitelji.html"
+                    class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                    title="Dobavitelji">Dobavitelji</a>
+                </li>
+                <li class="my-1 d-block nav-item">
+                  <a href="/" class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                    title="Dogodki">Dogodki</a>
+                </li>
+                <li class="my-1 d-block nav-item">
+                  <a href="/" class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle" title="O nas">O
+                    nas</a>
+                </li>
+                <li class="my-1 d-block nav-item">
+                  <a href="/" class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                    title="Kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End OffCanvas -->
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <main class="main-content flex-grow-1 linear-gradient">
+      <!-- Start Contact Block -->
+
+      <div class="container-xl">
+        <div class="profile-wrapper">
+          <div class="profile-left">
+            <button
+              class="btn btn-icon btn-profile-drawer-handle d-lg-none d-flex align-content-center justify-content-center">
+              <img src="./images/profile-sidebar-white.svg" alt="Profile Sidebar" />
+            </button>
+            <div class="profile-navigation admin">
+              <div class="profile-head">
+                <img src="./images/admin-avatar.svg" alt="Admin" />
+                <div class="user-detail">
+                  <span class="greeting">Pozdravljen/a</span>
+                  <p class="username">Admin</p>
+                </div>
+              </div>
+              <ul class="profile-body">
+                <li>
+                  <a href="admin-organizacija-dogodka.html" class="profile-nav-item active" title="Odprti dogodek">
+                    Odprti dogodek
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="profile-nav-item" title="Naročilnice za kupce">
+                    Naročilnice za kupce
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="profile-nav-item" title="Naročilnice za dobavitelje">
+                    Naročilnice za dobavitelje
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="profile-nav-item" title="Zgodovina dogodkov">
+                    Zgodovina dogodkov
+                  </a>
+                </li>
+                <li>
+                  <a href="admin-nepotrjeni-dobavitelji.html" class="profile-nav-item" title="Nepotrjeni dobavitelji">
+                    Nepotrjeni dobavitelji
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="profile-nav-item" title="Seznam kupcev">
+                    Seznam kupcev
+                  </a>
+                </li>
+                <li>
+                  <hr class="primary-saperator m-0" />
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="profile-nav-item" title="Odjava">
+                    Odjava
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-right">
+            <h3 class="raleway-bold text-primary">Organizacija dogodka</h3>
+            <div class="row">
+              <div class="col-xl-8">
+                <div class="card plain-card mb-16p">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <div class="form-group dark mb-md-4">
+                          <label class="mb-0">Ime dogodka</label>
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control"
+                            value="Stonogin Sejem" data-placeholder="Prosta reja, eko ..." />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <div class="form-group dark mb-md-4">
+                          <label class="mb-0">Lokacija dogodka</label>
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="Naslov"
+                            data-placeholder="Prosta reja, eko ..." />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group dark mb-md-4">
+                          <label class="mb-0">Datum dogodka:</label>
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="1.1.2024"
+                            data-placeholder="Prosta reja, eko ..." />
+                        </div>
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <div class="form-group dark mb-md-4">
+                          <label class="mb-0">Začetek</label>
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="08:00"
+                            data-placeholder="Prosta reja, eko ..." />
+                        </div>
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <div class="form-group dark mb-md-4">
+                          <label class="mb-0">Konec</label>
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="13:00"
+                            data-placeholder="Prosta reja, eko ..." />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group dark mb-0">
+                          <label class="mb-0">Čas nakupovanja v spletni trgovini:</label>
+                          <textarea name="" id="" rows="5" placeholder="Lorem ipsum sit dolor." class="form-control"
+                            value="13:00"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="primary-saperator mb-3 mb-md-4" />
+                    <div class="form-group dark">
+                      <label class="mb-0">Spletna trgovina bo odprta:</label>
+                      <div class="control-block">
+                        <div class="control-block-inner">
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="1.1.2024"
+                            data-placeholder="Prosta reja, eko ...">
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="08:00"
+                            data-placeholder="Prosta reja, eko ...">
+                        </div>
+                        <div class="control-block-inner">
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="1.1.2024"
+                            data-placeholder="Prosta reja, eko ...">
+                          <input type="text" placeholder="Prosta reja, eko ..." class="form-control" value="08:00"
+                            data-placeholder="Prosta reja, eko ...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card plain-card mb-16p">
+                  <div class="card-body">
+                    <h6 class="fw-bold text-primary">Poročilo dogodka</h6>
+                    <div class="row row-gap-3">
+                      <div class="col col-sm-8">
+                        <div class="table-responsive">
+                          <table class="table mb-0 grey-table">
+                            <thead>
+                              <tr>
+                                <th>Promet</th>
+                                <th class="fw-bold">Zaslužek</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>744,00 €</td>
+                                <td>74,40 €</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-auto d-flex align-items-end">
+                        <a href="#" title="Podrobnejši pregled"
+                          class="link-primary text-decoration-underline d-inline-block fw-bold letter-0-2">Podrobnejši
+                          pregled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card plain-card mb-16p">
+                  <div class="card-body">
+                    <h6 class="fw-bold text-primary">Kupci</h5>
+                      <div class="row row-gap-3">
+                        <div class="col-auto">
+                          <button type="button"
+                            class="btn btn-outlined-primary prefix-icon fw-bold fw-semibold dark-outline btn-md">
+                            <img src="images/message-icon-20.svg" alt="Message" />
+                            Masovno sporočilo
+                          </button>
+                        </div>
+                        <div class="col-auto">
+                          <button type="button"
+                            class="btn btn-outlined-primary prefix-icon fw-bold fw-semibold dark-outline btn-md">
+                            <img src="images/mail-icon-24.svg" alt="Email" />
+                            Masovni mail
+                          </button>
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                          <a href="#" title="Poglej seznam kupcev"
+                            class="link-primary text-decoration-underline d-inline-block fw-bold letter-0-2">Poglej
+                            seznam
+                            kupcev</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="sm-col-outer">
+                  <div class="card plain-card mb-16p">
+                    <div class="card-body">
+                      <h6 class="fw-bold text-primary text-center pb-0">Status trgovine</h6>
+                      <hr class="primary-saperator my-4" />
+                      <ul class="btn-list">
+                        <li>
+                          <a href="#" title="Odklenjena">Odklenjena</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Zakleni trgovino" class="filled">Zakleni trgovino</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card plain-card mb-16p">
+                    <div class="card-body">
+                      <h6 class="fw-bold text-primary pb-0">Privzeti strošek
+                        organizacije dogodka:</h6>
+                      <hr class="primary-saperator my-3" />
+                      <div class="row">
+                        <div class="col-5 col-sm-auto col-xl-12">
+                          <div class="form-group percent-control">
+                            <label for="" class="form-label">Za dobavitelje:</label>
+                            <div class="control-wrapper">
+                              <input type="text" class="form-control" value="10" />
+                              <p>%</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-5 col-sm-auto col-xl-12">
+
+                          <div class="form-group percent-control">
+                            <label for="" class="form-label">Za kupce:</label>
+                            <div class="control-wrapper">
+                              <input type="text" class="form-control" value="10" />
+                              <p>%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card plain-card mb-16p links-card">
+                    <div class="card-body">
+                      <h6 class="fw-bold text-primary pb-3">Izdajnice</h6>
+                      <ul>
+                        <li>
+                          <a href="#" title="Izdajnice za kupce"
+                            class="d-inline-block letter-0-2 text-decoration-underline link-primary">Izdajnice za
+                            kupce
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" title="Izdajnice za dobavitelje"
+                            class="d-inline-block letter-0-2 text-decoration-underline link-primary my-2">
+                            Izdajnice za dobavitelje
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" title="Seznam naročil za dobavitelje"
+                            class="d-inline-block letter-0-2 text-decoration-underline link-primary">
+                            Seznam naročil za dobavitelje
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card plain-card">
+              <div class="card-body">
+                <h6 class="fw-bold text-primary pb-0">Sodelujoče kmetije</h6>
+                <hr class="primary-saperator my-3">
+                <div class="form-group d-block d-md-none light-control prefix-icon filled-control  mb-3">
+                  <input type="text" class="form-control" placeholder="Išči" data-placeholder="Išči">
+                  <button class="btn-icon-prefix btn btn-icon btn-rounded btn-transparent">
+                    <img src="./images/search.svg" alt="Search">
+                  </button>
+                </div>
+                <div class="action-row">
+                  <button type="button"
+                    class="btn btn-md fw-semibold btn-primary-gradient d-flex align-items-center prefix-icon">
+                    <img src="images/user-solid-icon.svg" alt="User">
+                    Povabi
+                  </button>
+                  <button type="button" class="btn btn-md btn-outlined-primary prefix-icon fw-bold dark-outline">
+                    <img src="images/message-icon-20.svg" alt="Message">
+                    Masovno sporočilo
+                  </button>
+                  <button type="button" class="btn btn-md btn-outlined-primary prefix-icon fw-bold dark-outline">
+                    <img src="images/mail-icon-24.svg" alt="Email">
+                    Masovni mail
+                  </button>
+                  <div class="form-group d-none d-md-block light-control prefix-icon filled-control mb-sm-0 mb-2">
+                    <input type="text" class="form-control" placeholder="Išči" data-placeholder="Išči">
+                    <button class="btn-icon-prefix btn btn-icon btn-rounded btn-transparent">
+                      <img src="./images/search.svg" alt="Search">
+                    </button>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button"
+                      class="btn dropdown-toggle btn-light-outlined-primary d-flex align-items-center btn-sort"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>Razvrsti po:</span>abecedi
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a href="#" class="dropdown-item" type="button">
+                          Profil
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" type="button">
+                          Odjava
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="table-scroller">
+                  <table class="separator-table">
+                    <thead>
+                      <tr>
+                        <th>IME DOBAVITELJA</th>
+                        <th>NAROČILO</th>
+                        <th>KONTAKT</th>
+                        <th>STATUS</th>
+                        <th class="text-center">MIZA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status in-active">
+                            <i></i>
+                            <span>Vnaša</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status in-active">
+                            <i></i>
+                            <span>Vnaša</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status in-active">
+                            <i></i>
+                            <span>Vnaša</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status in-active">
+                            <i></i>
+                            <span>Vnaša</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="raleway-semibold">Ime dobavitelja</div>
+                        </td>
+                        <td>
+                          <div>Št. naročila</div>
+                        </td>
+                        <td>
+                          <div class="table-action justify-content-start m-0">
+                            <button class="btn btn-md btn-text-primary d-flex align-content-center contact-btn">
+                              031 123 456
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary ms-2">
+                              <img src="./images/message.svg" alt="Message" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/phone.svg" alt="Phone" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/email.svg" alt="Email" />
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="status active">
+                            <i></i>
+                            <span>Zaključil</span>
+                          </div>
+                        </td>
+                        <td class="fw-bold text-center">
+                          1
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center last-action">
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button class="btn btn-icon btn-rounded btn-sm btn-text-primary">
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Pagination -->
+                <ul class="pagination d-flex align-items-center justify-content-center py-lg-3">
+                  <li>
+                    <button class="btn btn-icon btn-transparent">
+                      <img src="./images/chevron-left.svg" alt="Back" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light-outlined-primary btn-icon active">
+                      1
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light-outlined-primary btn-icon">
+                      2
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light-outlined-primary btn-icon">
+                      3
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light-outlined-primary btn-icon">
+                      4
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-icon btn-transparent">
+                      <img src="./images/chevron-right.svg" alt="Next" />
+                    </button>
+                  </li>
+                </ul>
+                <!-- Pagination -->
+              </div>
+            </div>
+            <button class="btn btn-primary-gradient btn-lg mt-4">Arhiviraj dogodek</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Block -->
+
+      <a href="#" class="overlayer d-lg-none d-block"></a>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="container-xl">
+        <div class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap">
+          <a href="/" class="order-1 logo">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <ul
+            class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap">
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">ponudba</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">Kmetije</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">Dogodki</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">projekti</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">partnerji</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">O Stonogi</a>
+            </li>
+            <li class="mx-xl-2">
+              <a href="/" class="link-primary fw-bold text-uppercase d-inline-block align-middle">Kontakt</a>
+            </li>
+          </ul>
+          <a href="/" class="order-lg-3 order-2 social-logo">
+            <img src="./images/facebook.svg" alt="Facebook" />
+          </a>
+        </div>
+        <div class="secondary-footer text-center">
+          <p class="copyright p-0">
+            Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+            <a href="/" class="link-primary fw-medium d-inline-block align-middle" title="vse pravice pridržane">vse
+              pravice pridržane
+            </a>
+            |
+            <a href="/" class="link-primary fw-medium d-inline-block align-middle" title="Pogoji poslovanja">Pogoji
+              poslovanja</a>
+            |
+            <a href="/" class="link-primary fw-medium d-inline-block align-middle" title="Zasebnost">Zasebnost</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+
+  <!-- JavaScripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

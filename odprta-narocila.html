@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Odprta | Stonoga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meta descriptions may be included in search results to concisely summarize page content."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper d-flex flex-column">
+      <!-- Start Header -->
+      <header class="header sticky-top bg-white w-100">
+        <div class="container-xl">
+          <nav class="navbar py-0 w-100">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div
+                class="d-flex align-items-xl-end align-items-center flex-grow-1"
+              >
+                <button
+                  class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img src="./images/menu-primary.svg" alt="Menu" />
+                </button>
+                <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+                <ul
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3"
+                >
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./produkti.html"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./dobavitelji.html"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="kontakt.html"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-end mb-xl-n20p"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                  >
+                    <img src="./images/cart.svg" alt="Cart" />
+                    <span class="badge badge-lime rounded-circle">3</span>
+                  </button>
+                  <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start OffCanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex justify-content-center align-content-center"
+              >
+                <a href="/" class="logo mx-auto">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="main-navigation navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./produkti.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./dobavitelji.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End OffCanvas -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1 contact-page">
+        <!-- Start Contact Block -->
+
+        <div class="container-xl">
+          <div class="profile-wrapper linear-gradient">
+            <div class="profile-left">
+              <button
+                class="btn btn-icon btn-profile-drawer-handle d-lg-none d-flex align-content-center justify-content-center"
+              >
+                <img src="./images/profile-sidebar-white.svg" alt="Profile Sidebar" />
+              </button>
+              <div class="profile-navigation">
+                <div class="profile-head">
+                  <img src="./images/profile.svg" alt="Profile" />
+                  <div class="user-detail">
+                    <span class="greeting">Pozdravljen/a</span>
+                    <p class="username">Ime</p>
+                  </div>
+                </div>
+                <ul class="profile-body">
+                  <li>
+                    <a
+                      href="profil.html"
+                      class="profile-nav-item"
+                      title="Profil"
+                    >
+                      Profil
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="odprta-naročila.html"
+                      class="profile-nav-item active"
+                      title="Odprta naročila"
+                    >
+                      Odprta naročila
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="profile-nav-item"
+                      title="Zgodovina naročil"
+                    >
+                      Zgodovina naročil
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="primary-saperator m-0" />
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="profile-nav-item" title="Odjava">
+                      Odjava
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="profile-right">
+              <h3 class="raleway-bold text-primary">Odprta naročila</h3>
+              <div class="card plain-card">
+                <div class="card-body">
+                  <div class="table-scroller">
+                    <table class="colored-table">
+                      <tbody>
+                        <tr>
+                          <td class="bb-1 align-middle" width="50%">
+                            <p>IME SEJMA1</p>
+                            <p>1. 1. 2024</p>
+                          </td>
+                          <td class="bb-1 text-end align-middle">
+                            <img
+                              src="./images/info.svg"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Tooltip on top"
+                              alt="info"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-white p-0" colspan="2">
+                            <table
+                              style="
+                                width: 100%;
+                                border-bottom: 1px solid rgba(28, 98, 41, 0.3);
+                              "
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="d-xl-table-cell d-none"
+                                    width="64"
+                                    style="
+                                      vertical-align: top;
+                                      border-left: 1px solid
+                                        rgba(28, 98, 41, 0.3);
+                                    "
+                                  >
+                                    <table>
+                                      <tbody>
+                                        <td>
+                                          <div class="light-bg"></div>
+                                        </td>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top">
+                                    <div class="product-table-scroller">
+                                      <table class="product-table">
+                                        <thead>
+                                          <tr>
+                                            <th>ARTIKEL</th>
+                                            <th width="120">količina</th>
+                                            <th width="100">cena</th>
+                                            <th width="150">DOBAVITELJ</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <div class="product-row">
+                                                <div class="left">
+                                                  <i class="product-img">
+                                                    <img
+                                                      src="./images/vegetables/product1.jpg"
+                                                      alt="product1"
+                                                    />
+                                                  </i>
+                                                  <div class="product-detail">
+                                                    <ul>
+                                                      <li class="raleway-bold">
+                                                        Korenje
+                                                      </li>
+                                                      <li class="raleway-bold">
+                                                        Akcija
+                                                      </li>
+                                                      <li
+                                                        class="text-primary raleway-semibold"
+                                                      >
+                                                        Pakiranje
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="raleway-bold">0</td>
+                                            <td class="raleway-bold">0,00 €</td>
+                                            <td class="raleway-semibold">
+                                              Ime dobavitelja
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="product-row">
+                                                <div class="left">
+                                                  <i class="product-img">
+                                                    <img
+                                                      src="./images/meat-product/product1.jpg"
+                                                      alt="product1"
+                                                    />
+                                                  </i>
+                                                  <div class="product-detail">
+                                                    <ul>
+                                                      <li class="raleway-bold">
+                                                        Ekološko goveje mleto
+                                                        meso
+                                                      </li>
+                                                      <li class="raleway-bold">
+                                                        Akcija
+                                                      </li>
+                                                      <li
+                                                        class="text-primary raleway-semibold"
+                                                      >
+                                                        Pakiranje
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="raleway-bold">1</td>
+                                            <td class="raleway-bold">
+                                              20,00 €
+                                            </td>
+                                            <td class="raleway-semibold">
+                                              Ime dobavitelja
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="product-row">
+                                                <div class="left">
+                                                  <i class="product-img">
+                                                    <img
+                                                      src="./images/fruits/product2.jpg"
+                                                      alt="product2"
+                                                    />
+                                                  </i>
+                                                  <div class="product-detail">
+                                                    <ul>
+                                                      <li class="raleway-bold">
+                                                        Eko češnje
+                                                      </li>
+                                                      <li class="raleway-bold">
+                                                        Akcija
+                                                      </li>
+                                                      <li
+                                                        class="text-primary raleway-semibold"
+                                                      >
+                                                        Pakiranje
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="raleway-bold">1</td>
+                                            <td class="raleway-bold">
+                                              10,00 €
+                                            </td>
+                                            <td class="raleway-semibold">
+                                              Ime dobavitelja
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="product-row">
+                                                <div class="left">
+                                                  <i class="product-img">
+                                                    <img
+                                                      src="./images/fruits/product1.jpg"
+                                                      alt="product1"
+                                                    />
+                                                  </i>
+                                                  <div class="product-detail">
+                                                    <ul>
+                                                      <li class="raleway-bold">
+                                                        Jabolka
+                                                      </li>
+                                                      <li class="raleway-bold">
+                                                        Akcija
+                                                      </li>
+                                                      <li
+                                                        class="text-primary raleway-semibold"
+                                                      >
+                                                        Pakiranje
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="raleway-bold">1</td>
+                                            <td class="raleway-bold">
+                                              10,00 €
+                                            </td>
+                                            <td class="raleway-semibold">
+                                              Ime dobavitelja
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="product-row">
+                                                <div class="left">
+                                                  <i class="product-img">
+                                                    <img
+                                                      src="./images/vegetables/product1.jpg"
+                                                      alt="product1"
+                                                    />
+                                                  </i>
+                                                  <div class="product-detail">
+                                                    <ul>
+                                                      <li class="raleway-bold">
+                                                        Krompir
+                                                      </li>
+                                                      <li class="raleway-bold">
+                                                        Akcija
+                                                      </li>
+                                                      <li
+                                                        class="text-primary raleway-semibold"
+                                                      >
+                                                        Pakiranje
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="raleway-bold">1</td>
+                                            <td class="raleway-bold">
+                                              10,00 €
+                                            </td>
+                                            <td class="raleway-semibold">
+                                              Ime dobavitelja
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                  <td
+                                    class="d-xl-table-cell d-none"
+                                    width="64"
+                                    style="
+                                      vertical-align: top;
+                                      border-right: 1px solid
+                                        rgba(28, 98, 41, 0.3);
+                                    "
+                                  >
+                                    <table>
+                                      <tbody>
+                                        <td>
+                                          <div class="light-bg"></div>
+                                        </td>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td class="p-0">
+                            <div class="table-desclaimer">
+                              <p class="title">
+                                <img
+                                  src="./images/info.svg"
+                                  title="Tooltip on top"
+                                  alt="info"
+                                />
+                                Opombe:
+                              </p>
+                              <ul class="dot-listing text-primary">
+                                <li>
+                                  Naročili ste 1 kos <strong>korenja</strong>,
+                                  ampak smo odstranili 1 kos, ker je zmanjkalo
+                                  zalog.
+                                </li>
+                                <li>
+                                  Naročili ste 3 kose
+                                  <strong>krompirja</strong>, ampak smo
+                                  odstranili 2 kosa, ker je zmanjkalo zalog.
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td class="p-0">
+                            <ul class="total-expense">
+                              <li>
+                                Vrednost
+                                <p class="number">50,00 €</p>
+                              </li>
+                              <li>
+                                Odstopanje v ceni za dobavitelja 1
+                                <p class="number">+ 1,00 €</p>
+                              </li>
+                              <li>
+                                Odstopanje v ceni za dobavitelja 2
+                                <p class="number">+ 1,00 €</p>
+                              </li>
+                              <li class="raleway-bold">
+                                Vrednost + odstopanje
+                                <p class="number">52,00 €</p>
+                              </li>
+                              <li class="raleway-bold">
+                                Organizacija dogodka (10 % vrednosti)
+                                <p class="number">+ 7,20 €</p>
+                              </li>
+                              <li class="bordered-total raleway-bold">
+                                Skupni znesek
+                                <p class="number">59,20 €</p>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Block -->
+
+        <a href="#" class="overlayer d-lg-none d-block"></a>
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="container-xl">
+          <div
+            class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
+          >
+            <a href="/" class="order-1 logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+            <ul
+              class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap"
+            >
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >ponudba</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kmetije</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Dogodki</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >projekti</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >partnerji</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >O Stonogi</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <a href="/" class="order-lg-3 order-2 social-logo">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="secondary-footer text-center">
+            <p class="copyright p-0">
+              Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="vse pravice pridržane"
+                >vse pravice pridržane
+              </a>
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Pogoji poslovanja"
+                >Pogoji poslovanja</a
+              >
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Zasebnost"
+                >Zasebnost</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

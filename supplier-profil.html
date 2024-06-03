@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vaši podatki | Stonoga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meta descriptions may be included in search results to concisely summarize page content."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper d-flex flex-column">
+      <!-- Start Header -->
+      <header class="header sticky-top bg-white w-100">
+        <div class="container-xl">
+          <nav class="navbar py-0 w-100">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div
+                class="d-flex align-items-xl-end align-items-center flex-grow-1"
+              >
+                <button
+                  class="d-lg-none navbar-toggler d-flex align-items-center justify-content-center me-2 btn-sidebar-toggle btn btn-icon rounded-circle btn-text-primary p-10p"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img src="./images/menu-primary.svg" alt="Menu" />
+                </button>
+                <a href="index.html" class="logo me-xxl-4 me-xl-2">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+                <ul
+                  class="nav d-lg-flex d-none align-items-center justify-content-center mb-xl-2 mt-xl-0 mt-1 me-auto ps-3"
+                >
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./produkti.html"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="./dobavitelji.html"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="#"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-1">
+                    <a
+                      class="nav-link link-primary py-1 fw-semibold d-inline-block align-middle"
+                      href="kontakt.html"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-end mb-xl-n20p"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-cart btn-icon btn-lg btn-outlined-primary rounded-circle d-flex align-items-center justify-content-center ms-xxl-4 ms-xl-3 ms-2"
+                  >
+                    <img src="./images/cart.svg" alt="Cart" />
+                    <span class="badge badge-lime rounded-circle">3</span>
+                  </button>
+                  <p class="text-primary raleway-bold ms-2 ps-1">500,00 €</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start OffCanvas -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex justify-content-center align-content-center"
+              >
+                <a href="/" class="logo mx-auto">
+                  <img src="./images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="main-navigation navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./produkti.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Produkti"
+                      >Produkti</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="./dobavitelji.html"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dobavitelji"
+                      >Dobavitelji</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Dogodki"
+                      >Dogodki</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="O nas"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="my-1 d-block nav-item">
+                    <a
+                      href="/"
+                      class="nav-link d-block rounded-2 fw-semibold d-inline-block align-middle"
+                      title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End OffCanvas -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1">
+        <!-- Start Contact Block -->
+
+        <div class="container-xl">
+          <div class="profile-wrapper">
+            <div class="profile-left">
+              <button
+                class="btn btn-icon btn-profile-drawer-handle d-lg-none d-flex align-content-center justify-content-center"
+              >
+                <img src="./images/profile-sidebar-white.svg" alt="Profile Sidebar" />
+              </button>
+              <div class="profile-navigation">
+                <div class="profile-head">
+                  <img src="./images/supplier-avatar.svg" alt="Supplier" />
+                  <div class="user-detail">
+                    <span class="greeting">Pozdravljen/a</span>
+                    <p class="username">Ime dobavitelja</p>
+                  </div>
+                </div>
+                <ul class="profile-body">
+                  <li>
+                    <a
+                      href="supplier-profil.html"
+                      class="profile-nav-item active"
+                      title="Profil in ponudba"
+                    >
+                      Profil in ponudba
+                    </a>
+                  </li>
+                  <li class="have-child">
+                    <a
+                      href="#"
+                      class="profile-nav-item"
+                      title="Odprta naročila"
+                    >
+                      Odprta naročila
+                    </a>
+                    <ul class="profile-body nested-menu">
+                      <li>
+                        <a
+                          href="#"
+                          class="profile-nav-item"
+                          title="Naročila po artiklih"
+                        >
+                          Naročila po artiklih
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="supplier-event.html"
+                          class="profile-nav-item"
+                          title="Naročila po kupcih"
+                        >
+                          Naročila po kupcih
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="profile-nav-item"
+                      title="Zgodovina naročil"
+                    >
+                      Zgodovina naročil
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="primary-saperator m-0" />
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="profile-nav-item" title="Odjava">
+                      Odjava
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="profile-right">
+              <h3 class="raleway-bold text-primary mb-lg-3">Vaši podatki</h3>
+              <div class="row mb-lg-5 mb-4 align-items-start">
+                <div class="col-xl-8 d-flex justify-content-end">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Naziv dobavitelja"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control small-w-control">
+                        <select
+                          name="state"
+                          placeholder="Priimek"
+                          class="form-control"
+                        >
+                          <option value="OP1">Option 1</option>
+                          <option value="OP2">Option 2</option>
+                          <option value="OP3">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Naslov dobavitelja"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Kraj in poštna številka"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Ime nosilca dejavnosti"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Priimek nosilca dejavnosti"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Elektronski naslov"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Telefonska številka"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="auto-complete-control">
+                        <div class="form-group light-control">
+                          <input
+                            type="text"
+                            placeholder="Način pridelave"
+                            class="form-control"
+                          />
+                        </div>
+                        <ul class="badge-list">
+                          <li>
+                            <div class="chip chip-outlined-primary-light">
+                              EKO
+                              <button
+                                class="btn btn-icon btn-sm btn-text-primary"
+                              >
+                                <img src="./images/close.svg" alt="Remove" />
+                              </button>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="chip chip-outlined-primary-light">
+                              Lorem ipsum
+                              <button
+                                class="btn btn-icon btn-sm btn-text-primary"
+                              >
+                                <img src="./images/close.svg" alt="Remove" />
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group light-control">
+                        <input
+                          type="text"
+                          placeholder="Pridobljeni certifikati"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 d-xl-block d-none">
+                      <div class="button-list spacing-md">
+                        <button class="btn btn-primary btn-lg">Shrani</button>
+                        <button class="btn btn-primary-gradient btn-lg">
+                          Spremeni geslo
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="file-upload-wrapper">
+                    <div class="file-upload-container">
+                      <input type="file" multiple id="fileInput" />
+                      <i class="upload-icon">
+                        <img src="./images/upload.svg" alt="Upload" />
+                      </i>
+                      <p class="upload-info-text">
+                        Povlecite in spustite ali kliknite, da naložite sliko.
+                      </p>
+                    </div>
+                    <div
+                      class="uploaded-files-wrapper"
+                      id="uploadedFilesWrapper"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-12 d-xl-none d-block">
+                  <div class="button-list spacing-md">
+                    <button class="btn btn-primary btn-lg">Shrani</button>
+                    <button class="btn btn-primary-gradient btn-lg">
+                      Spremeni geslo
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="raleway-bold text-primary">Ponudba</h3>
+              <button
+                class="btn btn-primary-gradient btn-lg d-flex align-items-center"
+              >
+                Dodaj nov artikel
+                <img class="ms-2" src="./images/add-white.svg" alt="Add" />
+              </button>
+
+              <div class="mb-lg-5 mb-4">
+                <div
+                  class="product-list-title d-flex align-items-center flex-wrap pt-2 my-lg-4 my-3"
+                >
+                  <img
+                    class="me-md-3 me-2"
+                    src="./images/chicken-leg-piece.svg"
+                    alt="Chicken"
+                  />
+                  <h3 class="pb-0 text-primary raleway-bold">
+                    Meso in mesni izdelki
+                  </h3>
+                </div>
+
+                <div class="table-scroller">
+                  <table class="separator-table">
+                    <thead>
+                      <tr>
+                        <th>SKUPINA</th>
+                        <th>PODSKUPINA</th>
+                        <th></th>
+                        <th>NAZIV ARTIKLA</th>
+                        <th>OPIS ARTIKLA</th>
+                        <th>PAKIRANJE</th>
+                        <th>CENA NA PAKIRANJE</th>
+                        <th>ZALOGE</th>
+                        <th>DOBAVITELJ</th>
+                        <th>KRAJŠI OPIS</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Goveje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product1.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Mleto meso
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">1 kg</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">12.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">1o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Goveje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product2.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Goveje meso
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">900 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">10.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">2o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Piščančje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product1.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Hrenovke
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">400 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">12.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">3o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Piščančje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product2.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Hrenovke
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">700 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">7.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">3o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="mb-lg-5 mb-4">
+                <div
+                  class="product-list-title d-flex align-items-center flex-wrap mb-lg-4 mb-3"
+                >
+                  <img
+                    class="me-md-3 me-2"
+                    src="./images/caret.svg"
+                    alt="Caret"
+                  />
+                  <h3 class="pb-0 text-primary raleway-bold">Zelenjava</h3>
+                </div>
+
+                <div class="table-scroller">
+                  <table class="separator-table">
+                    <thead>
+                      <tr>
+                        <th>SKUPINA</th>
+                        <th>PODSKUPINA</th>
+                        <th></th>
+                        <th>NAZIV ARTIKLA</th>
+                        <th>OPIS ARTIKLA</th>
+                        <th>PAKIRANJE</th>
+                        <th>CENA NA PAKIRANJE</th>
+                        <th>ZALOGE</th>
+                        <th>DOBAVITELJ</th>
+                        <th>KRAJŠI OPIS</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Goveje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product1.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Mleto meso
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">1 kg</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">12.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">1o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Goveje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product2.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Goveje meso
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">900 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">10.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">2o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Piščančje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product1.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Hrenovke
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">400 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">12.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">3o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="highlighted">
+                          <div class="have-separator">Meso</div>
+                        </td>
+                        <td class="highlighted">
+                          <div>Piščančje</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">
+                            <i class="product-md-img">
+                              <img
+                                src="./images/meat-product/product2.jpg"
+                                alt="product1"
+                              />
+                            </i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-semibold">
+                            Hrenovke
+                          </div>
+                        </td>
+                        <td>
+                          <div class="have-separator">Akcija</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">700 g</div>
+                        </td>
+                        <td>
+                          <div class="have-separator">7.00 €</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">3o</div>
+                        </td>
+                        <td>
+                          <div class="have-separator raleway-bold">
+                            Ime dobavitelja
+                          </div>
+                        </td>
+                        <td>
+                          <div class="description">Lorem ipsum...</div>
+                        </td>
+                        <td>
+                          <div class="table-action">
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/edit.svg" alt="Edit" />
+                            </button>
+                            <button
+                              class="btn btn-icon btn-rounded btn-sm btn-text-primary"
+                            >
+                              <img src="./images/remove.svg" alt="Remove" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="mb-5 pb-md-3 pb-2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Block -->
+
+        <a href="#" class="overlayer d-lg-none d-block"></a>
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="container-xl">
+          <div
+            class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
+          >
+            <a href="/" class="order-1 logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+            <ul
+              class="d-flex align-items-center justify-content-center gap-xl-4 gap-lg-3 gap-2 order-lg-2 order-3 mx-auto mt-lg-0 mt-3 flex-wrap"
+            >
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >ponudba</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kmetije</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Dogodki</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >projekti</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >partnerji</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >O Stonogi</a
+                >
+              </li>
+              <li class="mx-xl-2">
+                <a
+                  href="/"
+                  class="link-primary fw-bold text-uppercase d-inline-block align-middle"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <a href="/" class="order-lg-3 order-2 social-logo">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="secondary-footer text-center">
+            <p class="copyright p-0">
+              Izdelava spletnih trgovin 4WEB d.o.o. | © 2020-2024 -
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="vse pravice pridržane"
+                >vse pravice pridržane
+              </a>
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Pogoji poslovanja"
+                >Pogoji poslovanja</a
+              >
+              |
+              <a
+                href="/"
+                class="link-primary fw-medium d-inline-block align-middle"
+                title="Zasebnost"
+                >Zasebnost</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        const uploadedFiles = [];
+
+        // Handle file selection
+        $("#fileInput").change(function (event) {
+          const files = event.target.files;
+          if (files.length > 0) {
+            $(".file-upload-wrapper").addClass("have-files"); // Show the wrapper when files are selected
+          }
+
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            if (file.size <= 2097152) {
+              // Check file size (2MB)
+              uploadedFiles.push(file);
+              displayFile(file);
+            } else {
+              alert("File size should be less than 2MB");
+            }
+          }
+          this.value = null; // Reset file input
+        });
+
+        // Display uploaded file
+        function displayFile(file) {
+          const fileWrapper = $("#uploadedFilesWrapper");
+          const fileElement = $(`
+          <div class="uploaded-item">
+                      <i class="file-icon">
+                        <img
+                          src="./images/fruits/product1.jpg"
+                          alt="File"
+                        />
+                        <button class="btn btn-remove btn-icon btn-sm btn-text-primary">
+                          <img src="./images/close-white.svg" alt="Close" />
+                        </button>
+                      </i>
+                      <div class="text-label">
+                        <p class="file-name">${file.name}</p>
+                        <span class="file-size">${(
+                          file.size /
+                          1024 /
+                          1024
+                        ).toFixed(2)} MB</span>
+                      </div>
+                    </div>
+        `);
+
+          // Handle file removal
+          fileElement.find(".btn-remove").click(function () {
+            const index = uploadedFiles.indexOf(file);
+            if (index > -1) {
+              uploadedFiles.splice(index, 1);
+              fileElement.remove();
+              if (uploadedFiles.length == 0) {
+                $(".file-upload-wrapper").removeClass("have-files");
+              }
+            }
+          });
+
+          fileWrapper.append(fileElement);
+        }
+      });
+    </script>
+  </body>
+</html>
