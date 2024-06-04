@@ -2087,6 +2087,7 @@ body.show-profile .overlayer {
 	display: flex;
 	gap: 8px;
 	align-items: flex-start;
+	margin-top: -14px;
 }
 
 .layer-percent {
@@ -2141,6 +2142,10 @@ body.show-profile .overlayer {
 
 .separator-table>tbody>tr:last-child>td:last-child {
 	border-bottom-right-radius: 12px;
+}
+
+.separator-table>tbody>tr:last-child td {
+	border-bottom: 0;
 }
 
 .separator-table>tbody>tr>td {
