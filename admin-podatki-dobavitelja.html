@@ -1180,6 +1180,15 @@
     <script src="js/main.js"></script>
     <!-- Initialize Swiper -->
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+
       var swiper = new Swiper(".blockSlider", {
         navigation: {
           nextEl: ".swiper-button-next",

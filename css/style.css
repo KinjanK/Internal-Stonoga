@@ -2481,6 +2481,11 @@ input[type=file]::-webkit-file-upload-button {
 	box-shadow: none !important;
 }
 
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .btn-text-primary{
+	display: flex;
+	align-items: center;
+}
+
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .accordion-button::after {
 	display: none;
 }
@@ -3404,11 +3409,11 @@ table td .contact-btn::after {
 	border-radius: 0 8px 0 0;
 }
 
-.admin-unverified-suppliers.grid-container .cell:nth-last-child(1),
+/* .admin-unverified-suppliers.grid-container .cell:nth-last-child(1),
 .admin-unverified-suppliers.grid-container .cell:nth-last-child(2),
 .admin-unverified-suppliers.grid-container .cell:nth-last-child(3) {
 	border-bottom: 1px solid rgba(28, 98, 41, 0.3);
-}
+} */
 
 /* change-profile */
 .btn.btn-icon.p-10p {
