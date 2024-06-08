@@ -31,22 +31,36 @@ $(document).ready(function () {
 
   // Define the function that toggles the 'page-scrolled' class based on scroll position
   function togglePageScrolled() {
-    if ($(window).scrollTop() > 50) {
-      $(".wrapper").addClass("page-scrolled");
+    const scrollTop = $(window).scrollTop();
+    const $wrapper = $(".wrapper");
+
+    if (scrollTop > 30) {
+      if (!$wrapper.hasClass("page-scrolled")) {
+        $wrapper.addClass("page-scrolled");
+      }
     } else {
-      $(".wrapper").removeClass("page-scrolled");
+      if ($wrapper.hasClass("page-scrolled")) {
+        $wrapper.removeClass("page-scrolled");
+      }
     }
+  }
+
+  // Debounce function to limit how often togglePageScrolled is called
+  function debounce(func, wait) {
+    let timeout;
+    return function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, wait);
+    };
   }
 
   // Call togglePageScrolled when the window loads
   $(window).on("load", function () {
-    togglePageScrolled(); // Check the scroll position when the page loads
+    window.scrollTo(0, 0);
   });
 
-  // Call togglePageScrolled when the window is scrolled
-  $(window).on("scroll", function () {
-    togglePageScrolled(); // Check the scroll position on each scroll event
-  });
+  // Call togglePageScrolled when the window is scrolled, with debounce
+  $(window).on("scroll", debounce(togglePageScrolled, 20));
 
   // Input Spinner
   $("input[type='number']").inputSpinner();
@@ -82,6 +96,16 @@ $(document).ready(function () {
 
     // Toggle the 'open' class on the parent <li> element
     $(this).parent(".have-child").toggleClass("open");
+  });
+
+  $(".have-child").each(function () {
+    if ($(this).find(".profile-nav-item.active").length > 0) {
+      $(this).addClass("open");
+      $(this).find(".nested-menu").css("display", "block"); // Ensure the submenu is visible
+    } else {
+      $(this).removeClass("open");
+      $(this).find(".nested-menu").css("display", "none"); // Ensure the submenu is hidden
+    }
   });
 
   // Window Resize

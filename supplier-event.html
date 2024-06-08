@@ -174,16 +174,19 @@
       <!-- End Header -->
 
       <!-- Main Content -->
-      <main class="main-content flex-grow-1">
+      <main class="main-content flex-grow-1 light-background">
         <!-- Start Contact Block -->
 
         <div class="container-xxl">
           <div class="profile-wrapper">
             <div class="profile-left">
               <button
-                class="btn btn-icon btn-profile-drawer-handle d-lg-none d-flex align-content-center justify-content-center"
+                class="btn btn-icon btn-profile-drawer-handle d-xl-none d-flex align-content-center justify-content-center"
               >
-                <img src="./images/profile-sidebar-white.svg" alt="Profile Sidebar" />
+                <img
+                  src="./images/profile-sidebar-white.svg"
+                  alt="Profile Sidebar"
+                />
               </button>
               <div class="profile-navigation">
                 <div class="profile-head">
@@ -325,22 +328,24 @@
                   >
                     <div class="accordion-item flush-accordion-item">
                       <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseOne"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseOne"
-                                ></button>
-                              </th>
-                              <th>
+                        <div class="item-costing-table">
+                          <div class="item-costing-header">
+                            <div class="col">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                              ></button>
+                            </div>
+                            <div class="col">
+                              <div
+                                class="d-flex flex-column justify-content-start"
+                              >
                                 <p
-                                  class="typography-caption text-primary raleway-bold"
+                                  class="typography-caption text-primary raleway-bold text-nowrap"
                                 >
                                   IME PRIIMEK
                                 </p>
@@ -354,68 +359,70 @@
                                     />
                                   </button>
                                   <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
+                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center text-nowrap"
                                   >
                                     <img
+                                      class="me-2"
                                       src="./images/phone.svg"
                                       alt="Message"
                                     />
                                     031 123 456
                                   </button>
                                 </div>
-                              </th>
-                              <th width="208">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <button
+                                class="btn btn-lg btn-text-primary-light text-primary px-3 text-nowrap"
+                              >
+                                ODSTOPANJE V CENI
+                              </button>
+                            </div>
+                            <div class="col sm">
+                              <img
+                                src="./images/info.svg"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Tooltip on top"
+                                alt="info"
+                              />
+                            </div>
+                            <div class="col">
+                              <p
+                                class="raleway-medium text-primary text-nowrap"
+                              >
+                                NAROČILO ODDANO: 1. 1. 2024
+                              </p>
+                            </div>
+                            <div class="col">
+                              <p class="raleway-bold text-primary text-nowrap">
+                                Skupni znesek: 68,20 €
+                              </p>
+                            </div>
+                            <div class="col">
+                              <div
+                                class="edits-action d-flex justify-content-center"
+                              >
                                 <button
-                                  class="btn btn-lg btn-text-primary-light text-primary px-3"
+                                  class="btn btn-icon btn-rounded btn-sm btn-text-primary"
                                 >
-                                  ODSTOPANJE V CENI
+                                  <img
+                                    src="./images/download.svg"
+                                    alt="Download"
+                                  />
                                 </button>
-                              </th>
-                              <th width="36">
-                                <img
-                                  src="./images/info.svg"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title="Tooltip on top"
-                                  alt="info"
-                                />
-                              </th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
-                                </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
+                                <button
+                                  class="btn btn-icon btn-rounded btn-sm btn-text-primary"
                                 >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
-                                </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
+                                  <img
+                                    src="./images/editable.svg"
+                                    alt="Editable"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div
                         id="flush-collapseOne"
@@ -423,26 +430,21 @@
                         data-bs-parent="#tableAccordion"
                       >
                         <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
+                          <div class="item-costing-table">
+                            <div class="item-costing-body">
+                              <div class="table-header">
+                                <div class="col first-col">ARTIKEL</div>
+                                <div class="col second-col">Količina</div>
+                                <div class="col third-col">Vrednost</div>
+                              </div>
+                              <div class="table-body">
+                                <div class="table-row">
+                                  <div class="col first-col">
                                     <div class="product-row">
                                       <div class="left">
                                         <i class="product-img">
                                           <img
-                                            src="./images/vegetables/product1.jpg"
+                                            src="./images/meat-product/product1.jpg"
                                             alt="product1"
                                           />
                                         </i>
@@ -453,361 +455,86 @@
                                             </li>
                                             <li class="raleway-bold">Akcija</li>
                                             <li
-                                              class="text-primary raleway-semibold"
+                                              class="text-primary raleway-medium"
                                             >
                                               Pakiranje
+                                            </li>
+                                          </ul>
+                                          <ul
+                                            class="more-details d-sm-none d-block"
+                                          >
+                                            <li class="label-value">
+                                              količina:
+                                              <span class="value">0</span>
+                                            </li>
+                                            <li class="label-value">
+                                              Vrednost:
+                                              <span class="value">0,00 €</span>
                                             </li>
                                           </ul>
                                         </div>
                                       </div>
                                     </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item flush-accordion-item">
-                      <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseTwo"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseTwo"
-                                ></button>
-                              </th>
-                              <th>
-                                <p
-                                  class="typography-caption text-primary raleway-bold"
-                                >
-                                  IME PRIIMEK
-                                </p>
-                                <div class="d-flex align-items-center">
-                                  <button
-                                    class="btn p-1 btn-icon btn-sm btn-rounded btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/email-outlined.svg"
-                                      alt="Email"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
-                                  >
-                                    <img
-                                      src="./images/phone.svg"
-                                      alt="Message"
-                                    />
-                                    031 123 456
-                                  </button>
+                                  </div>
+                                  <div class="col second-col raleway-bold">
+                                    0
+                                  </div>
+                                  <div class="col third-col raleway-bold">
+                                    0,00 €
+                                  </div>
                                 </div>
-                              </th>
-                              <th width="208">
-                                <button
-                                  class="btn btn-lg btn-text-primary-light text-primary px-3"
-                                >
-                                  ODSTOPANJE V CENI
-                                </button>
-                              </th>
-                              <th width="36">
-                                <img
-                                  src="./images/info.svg"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title="Tooltip on top"
-                                  alt="info"
-                                />
-                              </th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
-                                </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
-                                >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
+                                <div class="table-row">
+                                  <div class="col first-col">
+                                    <div class="product-row">
+                                      <div class="left">
+                                        <i class="product-img">
+                                          <img
+                                            src="./images/meat-product/product1.jpg"
+                                            alt="product1"
+                                          />
+                                        </i>
+                                        <div class="product-detail">
+                                          <ul>
+                                            <li class="raleway-bold">
+                                              Ekološko goveje mleto meso
+                                            </li>
+                                            <li class="raleway-bold">Akcija</li>
+                                            <li
+                                              class="text-primary raleway-medium"
+                                            >
+                                              Pakiranje
+                                            </li>
+                                          </ul>
+                                          <ul
+                                            class="more-details d-sm-none d-block"
+                                          >
+                                            <li class="label-value">
+                                              količina:
+                                              <span class="value">0</span>
+                                            </li>
+                                            <li class="label-value">
+                                              Vrednost:
+                                              <span class="value">0,00 €</span>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col second-col raleway-bold">
+                                    0
+                                  </div>
+                                  <div class="col third-col raleway-bold">
+                                    0,00 €
+                                  </div>
                                 </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                      <div
-                        id="flush-collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#tableAccordion"
-                      >
-                        <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
+                                <div class="table-row">
+                                  <div class="col first-col">
                                     <div class="product-row">
                                       <div class="left">
                                         <i class="product-img">
                                           <img
-                                            src="./images/vegetables/product1.jpg"
+                                            src="./images/meat-product/product1.jpg"
                                             alt="product1"
                                           />
                                         </i>
@@ -818,449 +545,81 @@
                                             </li>
                                             <li class="raleway-bold">Akcija</li>
                                             <li
-                                              class="text-primary raleway-semibold"
+                                              class="text-primary raleway-medium"
                                             >
                                               Pakiranje
+                                            </li>
+                                          </ul>
+                                          <ul
+                                            class="more-details d-sm-none d-block"
+                                          >
+                                            <li class="label-value">
+                                              količina:
+                                              <span class="value">0</span>
+                                            </li>
+                                            <li class="label-value">
+                                              Vrednost:
+                                              <span class="value">0,00 €</span>
                                             </li>
                                           </ul>
                                         </div>
                                       </div>
                                     </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item flush-accordion-item">
-                      <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseThree"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseThree"
-                                ></button>
-                              </th>
-                              <th>
-                                <p
-                                  class="typography-caption text-primary raleway-bold"
-                                >
-                                  IME PRIIMEK
-                                </p>
-                                <div class="d-flex align-items-center">
-                                  <button
-                                    class="btn p-1 btn-icon btn-sm btn-rounded btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/email-outlined.svg"
-                                      alt="Email"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
-                                  >
-                                    <img
-                                      src="./images/phone.svg"
-                                      alt="Message"
-                                    />
-                                    031 123 456
-                                  </button>
+                                  </div>
+                                  <div class="col second-col raleway-bold">
+                                    0
+                                  </div>
+                                  <div class="col third-col raleway-bold">
+                                    0,00 €
+                                  </div>
                                 </div>
-                              </th>
-                              <th width="208">
-                                <button
-                                  class="btn btn-lg btn-text-primary-light text-primary px-3"
-                                >
-                                  ODSTOPANJE V CENI
-                                </button>
-                              </th>
-                              <th width="36">
-                                <img
-                                  src="./images/info.svg"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title="Tooltip on top"
-                                  alt="info"
-                                />
-                              </th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
-                                </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
-                                >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
+                                <div class="table-row">
+                                  <div class="col first-col">
+                                    <div class="product-row">
+                                      <div class="left">
+                                        <i class="product-img icon-only">
+                                          <img
+                                            src="./images/chicken-leg-piece.svg"
+                                            alt="product1"
+                                          />
+                                        </i>
+                                        <div class="product-detail">
+                                          <ul>
+                                            <li class="raleway-bold">
+                                              Ekološko goveje mleto meso
+                                            </li>
+                                            <li class="raleway-bold">Akcija</li>
+                                            <li
+                                              class="text-primary raleway-medium"
+                                            >
+                                              Pakiranje
+                                            </li>
+                                          </ul>
+                                          <ul
+                                            class="more-details d-sm-none d-block"
+                                          >
+                                            <li class="label-value">
+                                              količina:
+                                              <span class="value">0</span>
+                                            </li>
+                                            <li class="label-value">
+                                              Vrednost:
+                                              <span class="value">0,00 €</span>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col second-col raleway-bold">
+                                    0
+                                  </div>
+                                  <div class="col third-col raleway-bold">
+                                    0,00 €
+                                  </div>
                                 </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                      <div
-                        id="flush-collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#tableAccordion"
-                      >
-                        <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
+                                <div class="table-row">
+                                  <div class="col first-col">
                                     <div class="product-row">
                                       <div class="left">
                                         <i class="product-img icon-only">
@@ -1276,1205 +635,87 @@
                                             </li>
                                             <li class="raleway-bold">Akcija</li>
                                             <li
-                                              class="text-primary raleway-semibold"
+                                              class="text-primary raleway-medium"
                                             >
                                               Pakiranje
+                                            </li>
+                                          </ul>
+                                          <ul
+                                            class="more-details d-sm-none d-block"
+                                          >
+                                            <li class="label-value">
+                                              količina:
+                                              <span class="value">0</span>
+                                            </li>
+                                            <li class="label-value">
+                                              Vrednost:
+                                              <span class="value">0,00 €</span>
                                             </li>
                                           </ul>
                                         </div>
                                       </div>
                                     </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item flush-accordion-item">
-                      <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseFour"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseFour"
-                                ></button>
-                              </th>
-                              <th>
-                                <p
-                                  class="typography-caption text-primary raleway-bold"
-                                >
-                                  IME PRIIMEK
-                                </p>
-                                <div class="d-flex align-items-center">
-                                  <button
-                                    class="btn p-1 btn-icon btn-sm btn-rounded btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/email-outlined.svg"
-                                      alt="Email"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
-                                  >
-                                    <img
-                                      src="./images/phone.svg"
-                                      alt="Message"
-                                    />
-                                    031 123 456
-                                  </button>
+                                  </div>
+                                  <div class="col second-col raleway-bold">
+                                    0
+                                  </div>
+                                  <div class="col third-col raleway-bold">
+                                    0,00 €
+                                  </div>
                                 </div>
-                              </th>
-                              <th width="208"></th>
-                              <th width="36">
-                                <img
-                                  src="./images/info.svg"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title="Tooltip on top"
-                                  alt="info"
-                                />
-                              </th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
+                              </div>
+                            </div>
+                            <div class="item-costing-footer">
+                              <div class="table-desclaimer">
+                                <p class="title">
+                                  <img
+                                    src="./images/info.svg"
+                                    title="Tooltip on top"
+                                    alt="info"
+                                  />
+                                  Opombe:
                                 </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
-                                >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
-                                </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                      <div
-                        id="flush-collapseFour"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#tableAccordion"
-                      >
-                        <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item flush-accordion-item">
-                      <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseFive"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseFive"
-                                ></button>
-                              </th>
-                              <th>
-                                <p
-                                  class="typography-caption text-primary raleway-bold"
-                                >
-                                  IME PRIIMEK
-                                </p>
-                                <div class="d-flex align-items-center">
-                                  <button
-                                    class="btn p-1 btn-icon btn-sm btn-rounded btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/email-outlined.svg"
-                                      alt="Email"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
-                                  >
-                                    <img
-                                      src="./images/phone.svg"
-                                      alt="Message"
-                                    />
-                                    031 123 456
-                                  </button>
-                                </div>
-                              </th>
-                              <th width="208"></th>
-                              <th width="36"></th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
-                                </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
-                                >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
-                                </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                      <div
-                        id="flush-collapseFive"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#tableAccordion"
-                      >
-                        <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item flush-accordion-item">
-                      <div class="accordion-header">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>
-                                <button
-                                  class="accordion-button"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseSix"
-                                  aria-expanded="false"
-                                  aria-controls="flush-collapseSix"
-                                ></button>
-                              </th>
-                              <th>
-                                <p
-                                  class="typography-caption text-primary raleway-bold"
-                                >
-                                  IME PRIIMEK
-                                </p>
-                                <div class="d-flex align-items-center">
-                                  <button
-                                    class="btn p-1 btn-icon btn-sm btn-rounded btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/email-outlined.svg"
-                                      alt="Email"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn p-0 btn-md btn-text-primary p-1 d-flex align-content-center"
-                                  >
-                                    <img
-                                      src="./images/phone.svg"
-                                      alt="Message"
-                                    />
-                                    031 123 456
-                                  </button>
-                                </div>
-                              </th>
-                              <th width="208"></th>
-                              <th width="36"></th>
-                              <th>
-                                <p class="raleway-medium text-primary">
-                                  NAROČILO ODDANO: 1. 1. 2024
-                                </p>
-                              </th>
-                              <th>
-                                <p class="raleway-bold text-primary">
-                                  Skupni znesek: 68,20 €
-                                </p>
-                              </th>
-                              <th>
-                                <div
-                                  class="edits-action d-flex justify-content-center"
-                                >
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/download.svg"
-                                      alt="Download"
-                                    />
-                                  </button>
-                                  <button
-                                    class="btn btn-icon btn-rounded btn-sm btn-text-primary"
-                                  >
-                                    <img
-                                      src="./images/editable.svg"
-                                      alt="Editable"
-                                    />
-                                  </button>
-                                </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                      <div
-                        id="flush-collapseSix"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#tableAccordion"
-                      >
-                        <div class="accordion-body">
-                          <div class="product-table-scroller">
-                            <table class="product-table">
-                              <thead>
-                                <tr>
-                                  <th width="64"></th>
-                                  <th>ARTIKEL</th>
-                                  <th width="100" class="text-end">količina</th>
-                                  <th width="120" class="text-end">vrednost</th>
-                                  <th width="64"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img icon-only">
-                                          <img
-                                            src="./images/chicken-leg-piece.svg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Ekološko goveje mleto meso
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <tr>
-                                  <td class="bb-0"></td>
-                                  <td>
-                                    <div class="product-row">
-                                      <div class="left">
-                                        <i class="product-img">
-                                          <img
-                                            src="./images/vegetables/product1.jpg"
-                                            alt="product1"
-                                          />
-                                        </i>
-                                        <div class="product-detail">
-                                          <ul>
-                                            <li class="raleway-bold">
-                                              Domače pomaranče
-                                            </li>
-                                            <li class="raleway-bold">Akcija</li>
-                                            <li
-                                              class="text-primary raleway-semibold"
-                                            >
-                                              Pakiranje
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td class="raleway-bold text-end">0</td>
-                                  <td class="raleway-bold text-end">0,00 €</td>
-                                  <td class="bb-0"></td>
-                                </tr>
-                                <!-- Footer -->
-                                <tr>
-                                  <td></td>
-                                  <td colspan="3">
-                                    <div class="info-block d-xl-flex">
-                                      <div class="table-desclaimer">
-                                        <p class="title">
-                                          <img
-                                            src="./images/info.svg"
-                                            title="Tooltip on top"
-                                            alt="info"
-                                          />
-                                          Opombe:
-                                        </p>
-                                        <ul class="dot-listing text-primary">
-                                          <li>
-                                            Gospod Janez Novak je naročil 1 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 1 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                          <li>
-                                            Gospod Janez Novak je naročil 3 kos
-                                            <strong
-                                              >ekološkega govejega mesa</strong
-                                            >, ampak smo odstranili 2 kos, ker
-                                            je zmanjkalo zalog.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <ul class="total-expense mt-xl-0 mt-2">
-                                        <li>
-                                          Vrednost
-                                          <p class="number">50,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 1
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li>
-                                          Odstopanje v ceni za dobavitelja 2
-                                          <p class="number">+ 1,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Vrednost + odstopanje
-                                          <p class="number">52,00 €</p>
-                                        </li>
-                                        <li class="raleway-bold">
-                                          Organizacija dogodka (10 % vrednosti)
-                                          <p class="number">+ 7,20 €</p>
-                                        </li>
-                                        <li class="bordered-total raleway-bold">
-                                          Skupni znesek
-                                          <p class="number">59,20 €</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                                <ul class="dot-listing text-primary">
+                                  <li>
+                                    Gospod Janez Novak je naročil 1 kos
+                                    <strong>ekološkega govejega mesa</strong>,
+                                    ampak smo odstranili 1 kos, ker je zmanjkalo
+                                    zalog.
+                                  </li>
+                                  <li>
+                                    Gospa Jana Novak je naročila 3 kose
+                                    <strong>domačih pomaranč</strong>, ampak smo
+                                    odstranili 2 kosa, ker je zmanjkalo zalog.
+                                  </li>
+                                </ul>
+                              </div>
+                              <ul class="total-expense">
+                                <li>
+                                  Vrednost
+                                  <p class="number">50,00 €</p>
+                                </li>
+                                <li>
+                                  Odstopanje v ceni za dobavitelja 1
+                                  <p class="number">+ 1,00 €</p>
+                                </li>
+                                <li>
+                                  Odstopanje v ceni za dobavitelja 2
+                                  <p class="number">+ 1,00 €</p>
+                                </li>
+                                <li class="raleway-bold">
+                                  Vrednost + odstopanje
+                                  <p class="number">52,00 €</p>
+                                </li>
+                                <li class="raleway-bold">
+                                  Organizacija dogodka (10 % vrednosti)
+                                  <p class="number">+ 7,20 €</p>
+                                </li>
+                                <li class="bordered-total raleway-bold">
+                                  Skupni znesek
+                                  <p class="number">59,20 €</p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2526,13 +767,13 @@
         </div>
         <!-- End Contact Block -->
 
-        <a href="#" class="overlayer d-lg-none d-block"></a>
+        <a href="#" class="overlayer d-xl-none d-block"></a>
       </main>
       <!-- End Main Content -->
 
       <!-- Start Footer -->
       <footer class="footer">
-        <div class="container-xl">
+        <div class="container-xxl">
           <div
             class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
           >

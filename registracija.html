@@ -23,7 +23,7 @@
     <div class="wrapper d-flex flex-column">
       <!-- Start Header -->
       <header class="header sticky-top bg-white w-100">
-        <div class="container-xl">
+        <div class="container-xxl">
           <nav class="navbar py-0 w-100">
             <div
               class="d-flex align-items-center justify-content-between w-100"
@@ -89,18 +89,53 @@
                 </ul>
               </div>
               <div
-                class="d-flex flexible-div align-items-xl-end align-items-center justify-content-between"
+                class="d-flex flexible-div align-items-center justify-content-between"
               >
-                <button
-                  class="d-sm-block d-none btn btn-primary btn-lg mb-xl-n20p min-xl-w-182p mr-xl-80p"
-                >
-                  Prijava
-                </button>
-                <button
-                  class="d-sm-none d-block btn btn-primary btn-sm mb-xl-n20p"
-                >
-                  Prijava
-                </button>
+                <div class="profile dropdown change-profile mr-xl-80p">
+                  <button
+                    class="d-sm-block d-none dropdown-toggle btn btn-primary btn-lg mb-xl-n20p min-xl-w-182p"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Prijava
+                  </button>
+                  <button
+                    class="d-sm-none d-block dropdown-toggle btn btn-primary btn-sm"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Prijava
+                  </button>
+                  <!-- <button
+                    type="button"
+                    class="btn dropdown-toggle btn-profile btn-text-primary d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./images/profile.svg" alt="profile" />
+                    <div class="d-md-block d-none details">
+                      <p>Pozdravljen/a</p>
+                      <span class="d-block raleway-bold">Ime</span>
+                    </div>
+                  </button> -->
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Kupci
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Dobavitelji
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item" type="button">
+                        Admin
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
                 <div
                   class="d-flex align-items-center justify-content-end mb-xl-n20p"
@@ -188,7 +223,7 @@
       <main class="main-content flex-grow-1 contact-page">
         <!-- Start Contact Block -->
 
-        <div class="container-xl">
+        <div class="container-xxl">
           <div class="tabs-wrapper registration">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -388,7 +423,7 @@
 
       <!-- Start Footer -->
       <footer class="footer">
-        <div class="container-xl">
+        <div class="container-xxl">
           <div
             class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
           >

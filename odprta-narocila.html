@@ -23,7 +23,7 @@
     <div class="wrapper d-flex flex-column">
       <!-- Start Header -->
       <header class="header sticky-top bg-white w-100">
-        <div class="container-xl">
+        <div class="container-xxl">
           <nav class="navbar py-0 w-100">
             <div
               class="d-flex align-items-center justify-content-between w-100"
@@ -174,16 +174,19 @@
       <!-- End Header -->
 
       <!-- Main Content -->
-      <main class="main-content flex-grow-1 contact-page">
+      <main class="main-content flex-grow-1 contact-page linear-gradient">
         <!-- Start Contact Block -->
 
-        <div class="container-xl">
-          <div class="profile-wrapper linear-gradient">
+        <div class="container-xxl">
+          <div class="profile-wrapper">
             <div class="profile-left">
               <button
-                class="btn btn-icon btn-profile-drawer-handle d-lg-none d-flex align-content-center justify-content-center"
+                class="btn btn-icon btn-profile-drawer-handle d-xl-none d-flex align-content-center justify-content-center"
               >
-                <img src="./images/profile-sidebar-white.svg" alt="Profile Sidebar" />
+                <img
+                  src="./images/profile-sidebar-white.svg"
+                  alt="Profile Sidebar"
+                />
               </button>
               <div class="profile-navigation">
                 <div class="profile-head">
@@ -205,7 +208,7 @@
                   </li>
                   <li>
                     <a
-                      href="odprta-naročila.html"
+                      href="odprta-narocila.html"
                       class="profile-nav-item active"
                       title="Odprta naročila"
                     >
@@ -237,325 +240,282 @@
               <div class="card plain-card">
                 <div class="card-body">
                   <div class="table-scroller">
-                    <table class="colored-table">
-                      <tbody>
-                        <tr>
-                          <td class="bb-1 align-middle" width="50%">
-                            <p>IME SEJMA1</p>
-                            <p>1. 1. 2024</p>
-                          </td>
-                          <td class="bb-1 text-end align-middle">
+                    <div class="item-costing-table">
+                      <div class="item-costing-header">
+                        <div class="total">
+                          <p>IME SEJMA1</p>
+                          <p>1. 1. 2024</p>
+                        </div>
+                        <div class="text-end">
+                          <img
+                            src="./images/info.svg"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Tooltip on top"
+                            alt="info"
+                          />
+                        </div>
+                      </div>
+                      <div class="item-costing-body">
+                        <div class="table-header">
+                          <div class="col first-col">ARTIKEL</div>
+                          <div class="col second-col">količina</div>
+                          <div class="col third-col">cena</div>
+                          <div class="col forth-col">DOBAVITELJ</div>
+                        </div>
+                        <div class="table-body">
+                          <div class="table-row">
+                            <div class="col first-col">
+                              <div class="product-row">
+                                <div class="left">
+                                  <i class="product-img">
+                                    <img
+                                      src="./images/vegetables/product1.jpg"
+                                      alt="product1"
+                                    />
+                                  </i>
+                                  <div class="product-detail">
+                                    <ul>
+                                      <li class="raleway-bold">Korenje</li>
+                                      <li class="raleway-bold">Akcija</li>
+                                      <li class="text-primary raleway-medium">
+                                        Pakiranje
+                                      </li>
+                                    </ul>
+                                    <ul class="more-details d-sm-none d-block">
+                                      <li class="label-value">
+                                        količina: <span class="value">0</span>
+                                      </li>
+                                      <li class="label-value">
+                                        cena: <span class="value">0,00 €</span>
+                                      </li>
+                                      <li class="label-value">
+                                        Dobavitelj:
+                                        <span class="value"
+                                          >Ime dobavitelja</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col second-col raleway-bold">0</div>
+                            <div class="col third-col raleway-bold">0,00 €</div>
+                            <div class="col forth-col">Ime dobavitelja</div>
+                          </div>
+                          <div class="table-row">
+                            <div class="col first-col">
+                              <div class="product-row">
+                                <div class="left">
+                                  <i class="product-img">
+                                    <img
+                                      src="./images/vegetables/product1.jpg"
+                                      alt="product1"
+                                    />
+                                  </i>
+                                  <div class="product-detail">
+                                    <ul>
+                                      <li class="raleway-bold">Korenje</li>
+                                      <li class="raleway-bold">Akcija</li>
+                                      <li class="text-primary raleway-medium">
+                                        Pakiranje
+                                      </li>
+                                    </ul>
+                                    <ul class="more-details d-sm-none d-block">
+                                      <li class="label-value">
+                                        količina: <span class="value">0</span>
+                                      </li>
+                                      <li class="label-value">
+                                        cena: <span class="value">0,00 €</span>
+                                      </li>
+                                      <li class="label-value">
+                                        Dobavitelj:
+                                        <span class="value"
+                                          >Ime dobavitelja</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col second-col raleway-bold">0</div>
+                            <div class="col third-col raleway-bold">0,00 €</div>
+                            <div class="col forth-col">Ime dobavitelja</div>
+                          </div>
+                          <div class="table-row">
+                            <div class="col first-col">
+                              <div class="product-row">
+                                <div class="left">
+                                  <i class="product-img">
+                                    <img
+                                      src="./images/vegetables/product1.jpg"
+                                      alt="product1"
+                                    />
+                                  </i>
+                                  <div class="product-detail">
+                                    <ul>
+                                      <li class="raleway-bold">Korenje</li>
+                                      <li class="raleway-bold">Akcija</li>
+                                      <li class="text-primary raleway-medium">
+                                        Pakiranje
+                                      </li>
+                                    </ul>
+                                    <ul class="more-details d-sm-none d-block">
+                                      <li class="label-value">
+                                        količina: <span class="value">0</span>
+                                      </li>
+                                      <li class="label-value">
+                                        cena: <span class="value">0,00 €</span>
+                                      </li>
+                                      <li class="label-value">
+                                        Dobavitelj:
+                                        <span class="value"
+                                          >Ime dobavitelja</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col second-col raleway-bold">0</div>
+                            <div class="col third-col raleway-bold">0,00 €</div>
+                            <div class="col forth-col">Ime dobavitelja</div>
+                          </div>
+                          <div class="table-row">
+                            <div class="col first-col">
+                              <div class="product-row">
+                                <div class="left">
+                                  <i class="product-img">
+                                    <img
+                                      src="./images/vegetables/product1.jpg"
+                                      alt="product1"
+                                    />
+                                  </i>
+                                  <div class="product-detail">
+                                    <ul>
+                                      <li class="raleway-bold">Korenje</li>
+                                      <li class="raleway-bold">Akcija</li>
+                                      <li class="text-primary raleway-medium">
+                                        Pakiranje
+                                      </li>
+                                    </ul>
+                                    <ul class="more-details d-sm-none d-block">
+                                      <li class="label-value">
+                                        količina: <span class="value">0</span>
+                                      </li>
+                                      <li class="label-value">
+                                        cena: <span class="value">0,00 €</span>
+                                      </li>
+                                      <li class="label-value">
+                                        Dobavitelj:
+                                        <span class="value"
+                                          >Ime dobavitelja</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col second-col raleway-bold">0</div>
+                            <div class="col third-col raleway-bold">0,00 €</div>
+                            <div class="col forth-col">Ime dobavitelja</div>
+                          </div>
+                          <div class="table-row">
+                            <div class="col first-col">
+                              <div class="product-row">
+                                <div class="left">
+                                  <i class="product-img">
+                                    <img
+                                      src="./images/vegetables/product1.jpg"
+                                      alt="product1"
+                                    />
+                                  </i>
+                                  <div class="product-detail">
+                                    <ul>
+                                      <li class="raleway-bold">Korenje</li>
+                                      <li class="raleway-bold">Akcija</li>
+                                      <li class="text-primary raleway-medium">
+                                        Pakiranje
+                                      </li>
+                                    </ul>
+                                    <ul class="more-details d-sm-none d-block">
+                                      <li class="label-value">
+                                        količina: <span class="value">0</span>
+                                      </li>
+                                      <li class="label-value">
+                                        cena: <span class="value">0,00 €</span>
+                                      </li>
+                                      <li class="label-value">
+                                        Dobavitelj:
+                                        <span class="value"
+                                          >Ime dobavitelja</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col second-col raleway-bold">0</div>
+                            <div class="col third-col raleway-bold">0,00 €</div>
+                            <div class="col forth-col">Ime dobavitelja</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-costing-footer">
+                        <div class="table-desclaimer">
+                          <p class="title">
                             <img
                               src="./images/info.svg"
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
                               title="Tooltip on top"
                               alt="info"
                             />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="bg-white p-0" colspan="2">
-                            <table
-                              style="
-                                width: 100%;
-                                border-bottom: 1px solid rgba(28, 98, 41, 0.3);
-                              "
-                            >
-                              <tbody>
-                                <tr>
-                                  <td
-                                    class="d-xl-table-cell d-none"
-                                    width="64"
-                                    style="
-                                      vertical-align: top;
-                                      border-left: 1px solid
-                                        rgba(28, 98, 41, 0.3);
-                                    "
-                                  >
-                                    <table>
-                                      <tbody>
-                                        <td>
-                                          <div class="light-bg"></div>
-                                        </td>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                  <td style="vertical-align: top">
-                                    <div class="product-table-scroller">
-                                      <table class="product-table">
-                                        <thead>
-                                          <tr>
-                                            <th>ARTIKEL</th>
-                                            <th width="120">količina</th>
-                                            <th width="100">cena</th>
-                                            <th width="150">DOBAVITELJ</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>
-                                              <div class="product-row">
-                                                <div class="left">
-                                                  <i class="product-img">
-                                                    <img
-                                                      src="./images/vegetables/product1.jpg"
-                                                      alt="product1"
-                                                    />
-                                                  </i>
-                                                  <div class="product-detail">
-                                                    <ul>
-                                                      <li class="raleway-bold">
-                                                        Korenje
-                                                      </li>
-                                                      <li class="raleway-bold">
-                                                        Akcija
-                                                      </li>
-                                                      <li
-                                                        class="text-primary raleway-semibold"
-                                                      >
-                                                        Pakiranje
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="raleway-bold">0</td>
-                                            <td class="raleway-bold">0,00 €</td>
-                                            <td class="raleway-semibold">
-                                              Ime dobavitelja
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <div class="product-row">
-                                                <div class="left">
-                                                  <i class="product-img">
-                                                    <img
-                                                      src="./images/meat-product/product1.jpg"
-                                                      alt="product1"
-                                                    />
-                                                  </i>
-                                                  <div class="product-detail">
-                                                    <ul>
-                                                      <li class="raleway-bold">
-                                                        Ekološko goveje mleto
-                                                        meso
-                                                      </li>
-                                                      <li class="raleway-bold">
-                                                        Akcija
-                                                      </li>
-                                                      <li
-                                                        class="text-primary raleway-semibold"
-                                                      >
-                                                        Pakiranje
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="raleway-bold">1</td>
-                                            <td class="raleway-bold">
-                                              20,00 €
-                                            </td>
-                                            <td class="raleway-semibold">
-                                              Ime dobavitelja
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <div class="product-row">
-                                                <div class="left">
-                                                  <i class="product-img">
-                                                    <img
-                                                      src="./images/fruits/product2.jpg"
-                                                      alt="product2"
-                                                    />
-                                                  </i>
-                                                  <div class="product-detail">
-                                                    <ul>
-                                                      <li class="raleway-bold">
-                                                        Eko češnje
-                                                      </li>
-                                                      <li class="raleway-bold">
-                                                        Akcija
-                                                      </li>
-                                                      <li
-                                                        class="text-primary raleway-semibold"
-                                                      >
-                                                        Pakiranje
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="raleway-bold">1</td>
-                                            <td class="raleway-bold">
-                                              10,00 €
-                                            </td>
-                                            <td class="raleway-semibold">
-                                              Ime dobavitelja
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <div class="product-row">
-                                                <div class="left">
-                                                  <i class="product-img">
-                                                    <img
-                                                      src="./images/fruits/product1.jpg"
-                                                      alt="product1"
-                                                    />
-                                                  </i>
-                                                  <div class="product-detail">
-                                                    <ul>
-                                                      <li class="raleway-bold">
-                                                        Jabolka
-                                                      </li>
-                                                      <li class="raleway-bold">
-                                                        Akcija
-                                                      </li>
-                                                      <li
-                                                        class="text-primary raleway-semibold"
-                                                      >
-                                                        Pakiranje
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="raleway-bold">1</td>
-                                            <td class="raleway-bold">
-                                              10,00 €
-                                            </td>
-                                            <td class="raleway-semibold">
-                                              Ime dobavitelja
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <div class="product-row">
-                                                <div class="left">
-                                                  <i class="product-img">
-                                                    <img
-                                                      src="./images/vegetables/product1.jpg"
-                                                      alt="product1"
-                                                    />
-                                                  </i>
-                                                  <div class="product-detail">
-                                                    <ul>
-                                                      <li class="raleway-bold">
-                                                        Krompir
-                                                      </li>
-                                                      <li class="raleway-bold">
-                                                        Akcija
-                                                      </li>
-                                                      <li
-                                                        class="text-primary raleway-semibold"
-                                                      >
-                                                        Pakiranje
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="raleway-bold">1</td>
-                                            <td class="raleway-bold">
-                                              10,00 €
-                                            </td>
-                                            <td class="raleway-semibold">
-                                              Ime dobavitelja
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </td>
-                                  <td
-                                    class="d-xl-table-cell d-none"
-                                    width="64"
-                                    style="
-                                      vertical-align: top;
-                                      border-right: 1px solid
-                                        rgba(28, 98, 41, 0.3);
-                                    "
-                                  >
-                                    <table>
-                                      <tbody>
-                                        <td>
-                                          <div class="light-bg"></div>
-                                        </td>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <td class="p-0">
-                            <div class="table-desclaimer">
-                              <p class="title">
-                                <img
-                                  src="./images/info.svg"
-                                  title="Tooltip on top"
-                                  alt="info"
-                                />
-                                Opombe:
-                              </p>
-                              <ul class="dot-listing text-primary">
-                                <li>
-                                  Naročili ste 1 kos <strong>korenja</strong>,
-                                  ampak smo odstranili 1 kos, ker je zmanjkalo
-                                  zalog.
-                                </li>
-                                <li>
-                                  Naročili ste 3 kose
-                                  <strong>krompirja</strong>, ampak smo
-                                  odstranili 2 kosa, ker je zmanjkalo zalog.
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td class="p-0">
-                            <ul class="total-expense">
-                              <li>
-                                Vrednost
-                                <p class="number">50,00 €</p>
-                              </li>
-                              <li>
-                                Odstopanje v ceni za dobavitelja 1
-                                <p class="number">+ 1,00 €</p>
-                              </li>
-                              <li>
-                                Odstopanje v ceni za dobavitelja 2
-                                <p class="number">+ 1,00 €</p>
-                              </li>
-                              <li class="raleway-bold">
-                                Vrednost + odstopanje
-                                <p class="number">52,00 €</p>
-                              </li>
-                              <li class="raleway-bold">
-                                Organizacija dogodka (10 % vrednosti)
-                                <p class="number">+ 7,20 €</p>
-                              </li>
-                              <li class="bordered-total raleway-bold">
-                                Skupni znesek
-                                <p class="number">59,20 €</p>
-                              </li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tfoot>
-                    </table>
+                            Opombe:
+                          </p>
+                          <ul class="dot-listing text-primary">
+                            <li>
+                              Naročili ste 1 kos <strong>korenja</strong>, ampak
+                              smo odstranili 1 kos, ker je zmanjkalo zalog.
+                            </li>
+                            <li>
+                              Naročili ste 3 kose
+                              <strong>krompirja</strong>, ampak smo odstranili 2
+                              kosa, ker je zmanjkalo zalog.
+                            </li>
+                          </ul>
+                        </div>
+                        <ul class="total-expense">
+                          <li>
+                            Vrednost
+                            <p class="number">50,00 €</p>
+                          </li>
+                          <li>
+                            Odstopanje v ceni za dobavitelja 1
+                            <p class="number">+ 1,00 €</p>
+                          </li>
+                          <li>
+                            Odstopanje v ceni za dobavitelja 2
+                            <p class="number">+ 1,00 €</p>
+                          </li>
+                          <li class="raleway-bold">
+                            Vrednost + odstopanje
+                            <p class="number">52,00 €</p>
+                          </li>
+                          <li class="raleway-bold">
+                            Organizacija dogodka (10 % vrednosti)
+                            <p class="number">+ 7,20 €</p>
+                          </li>
+                          <li class="bordered-total raleway-bold">
+                            Skupni znesek
+                            <p class="number">59,20 €</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -564,13 +524,13 @@
         </div>
         <!-- End Contact Block -->
 
-        <a href="#" class="overlayer d-lg-none d-block"></a>
+        <a href="#" class="overlayer d-xl-none d-block"></a>
       </main>
       <!-- End Main Content -->
 
       <!-- Start Footer -->
       <footer class="footer">
-        <div class="container-xl">
+        <div class="container-xxl">
           <div
             class="main-footer d-flex align-items-center justify-content-between w-100 flex-wrap"
           >
