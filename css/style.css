@@ -2,7 +2,7 @@
 
 /*
 ------------------------------------------------------------
-Project Name : Internal Stonoga;
+Project Name : Stonoga;
 ------------------------------------------------------------
 */
 
@@ -3028,7 +3028,6 @@ table td .contact-btn::after {
 .item-costing-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	padding: 12px 20px;
 	background: #ECF6EE;
 	border-bottom: 1px solid #BBD0BF;
@@ -3213,7 +3212,6 @@ table td .contact-btn::after {
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	gap: 9px;
 	flex-wrap: wrap;
 	border-bottom: 0;
@@ -3223,11 +3221,10 @@ table td .contact-btn::after {
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
-.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col:first-child,
-.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col.sm {
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-1,
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-4{
 	max-width: 58px;
 	min-width: 58px;
 }
@@ -3244,6 +3241,40 @@ table td .contact-btn::after {
 .accordion-flush>.flush-accordion-item.accordion-item .accordion-collapse .accordion-body .item-costing-table .item-costing-footer {
 	background: none;
 }
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-1{
+	order: 1;
+}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-2{
+	min-width: 44%;
+	order: 2;
+
+}
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-4{
+	order: 3;
+	min-width: 18px;
+	max-width: 18px;
+}
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-7{
+	order: 4;
+	min-width: 92px;
+	max-width: 92px;
+}
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-3{
+	order: 5;
+	min-width: 100%;
+	padding: 0 16px 0 65px;
+}
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-5{
+	order: 6;
+	min-width: 100%;
+	padding: 0 16px 0 65px;
+}
+.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-6{
+	order: 7;
+	min-width: 100%;
+	padding: 0 16px 0 65px;
+}
+
 
 
 /* flex-separator-table */
@@ -3802,7 +3833,29 @@ table td .contact-btn::after {
 		width: 22px;
 		height: 22px;
 	}
-}
+
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-2{
+		min-width: 280px;
+		max-width: 280px;
+	}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-3{
+		order: 3;
+		min-width: 210px;
+		max-width: 210px;
+		padding: 0;
+	}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-4{
+		margin-left: auto;
+	}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-5{
+		min-width: 280px;
+		max-width: 280px;
+	}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-6{
+		min-width: 300px;
+		max-width: 300px;
+	}
+	}
 
 @media (min-width:992px) {
 	.hero-banner {
@@ -4077,6 +4130,15 @@ table td .contact-btn::after {
 	.admin-unverified-suppliers.grid-container .cell {
 		font-size: 16px;
 		line-height: 22px;
+	}
+
+	.accordion-flush > .flush-accordion-item.accordion-item > .accordion-header .item-costing-table .item-costing-header .col-no-2{
+		min-width: 350px;
+		max-width:350px;
+	}
+	.accordion-flush > .flush-accordion-item.accordion-item > .accordion-header .item-costing-table .item-costing-header .col-no-5 {
+		min-width: 350px;
+		max-width: 350px;
 	}
 
 }
@@ -4423,6 +4485,9 @@ table td .contact-btn::after {
 	.modal-xl {
 		--bs-modal-width: 1190px;
 	}
+
+
+	
 }
 
 @media (min-width:1400px) {
@@ -4466,6 +4531,8 @@ table td .contact-btn::after {
 	.have-xxl-separator::after {
 		display: block;
 	}
+	
+	
 }
 
 @media (min-width:1500px) {
@@ -4630,6 +4697,19 @@ table td .contact-btn::after {
 
 	.flex-separator-table .flex-separator-table-body .flex-separator-table-row .col:last-child {
 		min-width: auto;
+	}
+
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col{
+		order: inherit;
+		padding-left: 0;
+		justify-content: center;
+	}
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-2,
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-5,
+	.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-6,
+		.accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-7{
+		min-width: auto;
+		max-width: inherit;
 	}
 }
 
