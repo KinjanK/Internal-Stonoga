@@ -3119,11 +3119,13 @@ table td .contact-btn::after {
 .item-costing-body .table-body .table-row .col .product-row {
 	display: flex;
 	align-items: center;
+	flex-grow: 1;
 	padding: 0;
 	margin: 0;
 }
 
 .item-costing-body .table-body .table-row .col .product-row .left {
+	flex-grow: 1;
 	margin-bottom: 0;
 }
 
@@ -3289,19 +3291,19 @@ table td .contact-btn::after {
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-3 {
 	order: 5;
 	min-width: 100%;
-	padding: 0 16px 0 65px;
+	padding: 0 16px 0 50px;
 }
 
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-5 {
 	order: 6;
 	min-width: 100%;
-	padding: 0 16px 0 65px;
+	padding: 0 16px 0 50px;
 }
 
 .accordion-flush>.flush-accordion-item.accordion-item>.accordion-header .item-costing-table .item-costing-header .col-no-6 {
 	order: 7;
 	min-width: 100%;
-	padding: 0 16px 0 65px;
+	padding: 0 16px 0 50px;
 }
 
 
@@ -3345,7 +3347,6 @@ table td .contact-btn::after {
 	color: #1C6229;
 	font-weight: 400;
 	min-width: 270px;
-	max-width: 270px;
 }
 
 .flex-separator-table .flex-separator-table-body .col label {
@@ -3680,6 +3681,9 @@ table td .contact-btn::after {
 		min-width: 58px;
 	}
 
+	.flex-separator-table .flex-separator-table-body .col {
+		max-width: 270px;
+	}
 }
 
 @media (min-width:768px) {
