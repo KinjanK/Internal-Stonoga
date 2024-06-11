@@ -45,22 +45,14 @@ $(document).ready(function () {
     }
   }
 
-  // Debounce function to limit how often togglePageScrolled is called
-  function debounce(func, wait) {
-    let timeout;
-    return function () {
-      clearTimeout(timeout);
-      timeout = setTimeout(func, wait);
-    };
-  }
-
   // Call togglePageScrolled when the window loads
   $(window).on("load", function () {
     window.scrollTo(0, 0);
+    togglePageScrolled();
   });
 
-  // Call togglePageScrolled when the window is scrolled, with debounce
-  $(window).on("scroll", debounce(togglePageScrolled, 20));
+  // Call togglePageScrolled when the window is scrolled
+  $(window).on("scroll", togglePageScrolled);
 
   // Input Spinner
   $("input[type='number']").inputSpinner();
